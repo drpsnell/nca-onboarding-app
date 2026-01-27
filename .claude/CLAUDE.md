@@ -22,6 +22,40 @@ Three interconnected pillars:
 - ICD-10 Codes: FixYourOwnBack (lumbar disc herniation), more coming on NCA Academy site
 - Sports: Running, Strength athletes (Kabuki program), Cycling, etc.
 
+### Clinical Reference: Yellow Flags
+
+Yellow flags are psychosocial risk factors for developing persistent/chronic back pain. Screen for these during patient history:
+
+**Beliefs & Attitudes**
+- Belief that pain is harmful or severely disabling
+- Belief that all pain must be abolished before returning to activity
+- Expectation of passive treatments rather than active participation
+- Catastrophizing (expecting the worst)
+
+**Behaviors**
+- Fear-avoidance behavior and reduced activity levels
+- Extended rest or "downtime"
+- Reduced activity levels with significant withdrawal from daily activities
+- Poor compliance with previous treatment recommendations
+- Reliance on aids (braces, crutches) beyond expected timeframes
+
+**Emotional Factors**
+- Tendency toward low mood, depression, anxiety
+- Social withdrawal and isolation
+- Feeling useless or not needed
+
+**Work & Compensation**
+- History of extended time off work with previous back pain episodes
+- Problems with claims, compensation, or time off work
+- Job dissatisfaction or poor work relationships
+- Belief that work is harmful or will cause further injury
+- Lack of employer support or workplace modifications
+
+**Social Factors**
+- Lack of social support system
+- Overprotective family reinforcing disability
+- Socioeconomic disadvantage
+
 ### NCA Reference Libraries
 
 Shared NCA educational content located at `~/Documents/NCA-Libraries/`:
@@ -68,6 +102,7 @@ Large PDFs have been OCR'd to plain text for Claude access. Located in `~/Docume
 | `Trescot-Peripheral-Nerve-Procedures.txt` | Trescot - Peripheral Nerve Entrapments |
 | `Biel-Trail-Guide-Body.txt` | Biel - Trail Guide to the Body |
 | `Clinical-Companion-FYOB.txt` | Clinical Companion to Fix Your Own Back (NCA Content) |
+| `Attia-Outlive.txt` | Attia - Outlive: The Science and Art of Longevity |
 
 **Directly readable PDFs (under 20MB):**
 - McGill - Back Mechanic (19 MB)
@@ -75,7 +110,6 @@ Large PDFs have been OCR'd to plain text for Claude access. Located in `~/Docume
 - Barral & Croibier - Manual Therapy for Peripheral Nerves (15 MB)
 - Vojta - The Vojta Principles (5.8 MB)
 - Pecina - Tunnel Syndromes (6 MB)
-- Attia - Outlive (2.4 MB, EPUB)
 
 **Note:** Wall & Melzack's Textbook of Pain is AZW (Kindle) format - requires conversion for access.
 
