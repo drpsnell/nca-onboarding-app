@@ -22,6 +22,48 @@ Three interconnected pillars:
 - ICD-10 Codes: FixYourOwnBack (lumbar disc herniation), more coming on NCA Academy site
 - Sports: Running, Strength athletes (Kabuki program), Cycling, etc.
 
+### Clinical Reference: Red Flags
+
+Red flags are signs/symptoms indicating possible serious pathology requiring urgent medical evaluation:
+
+**Cauda Equina Syndrome (Emergency)**
+- Saddle anesthesia (numbness in perineal region)
+- Bladder dysfunction (retention or incontinence)
+- Bowel incontinence
+- Progressive bilateral leg weakness
+- Sexual dysfunction (acute onset)
+
+**Cancer/Tumor**
+- History of cancer
+- Unexplained weight loss (>10 lbs in 6 months)
+- Age >50 or <20 with no clear mechanism
+- Pain at rest or night pain that wakes from sleep
+- Failure to improve with conservative treatment (4-6 weeks)
+
+**Infection**
+- Fever, chills, night sweats
+- Recent bacterial infection (UTI, skin infection)
+- IV drug use
+- Immunosuppression (HIV, transplant, chronic steroids)
+- Recent spinal procedure
+
+**Fracture**
+- Significant trauma (fall, MVA)
+- Minor trauma in elderly or osteoporotic patient
+- Prolonged corticosteroid use
+- Age >70
+
+**Vascular**
+- Pulsatile abdominal mass (AAA)
+- Atherosclerotic vascular disease history
+- Pain not affected by movement or position
+
+**Other Serious Pathology**
+- Progressive neurological deficit
+- Bilateral neurological symptoms
+- Upper motor neuron signs (Babinski, clonus, hyperreflexia)
+- Thoracic pain (higher risk of serious pathology than lumbar)
+
 ### Clinical Reference: Yellow Flags
 
 Yellow flags are psychosocial risk factors for developing persistent/chronic back pain. Screen for these during patient history:
