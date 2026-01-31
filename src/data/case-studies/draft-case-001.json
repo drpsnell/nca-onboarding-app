@@ -35,11 +35,11 @@
   "physicalExam": {
     "observation": "Patient enters slowly, guarding right side. Stands with reduced lumbar lordosis and slight left lateral shift. Sits gingerly on edge of chair, frequently shifts position.",
     "activeROM": {
-      "flexion": "Limited to 40% with pain at end range, deviation to left",
-      "extension": "Limited to 50% with centralization of symptoms",
-      "rightLateralFlexion": "Limited to 60% with local pain",
+      "flexion": "Hesitant, markedly limited excursion with Gower's sign. Deviation to left. Reproduces CC back and posterior thigh pain.",
+      "extension": "Painful and limited on initial rep. Patient guards and is apprehensive.",
+      "rightLateralFlexion": "Limited with local pain",
       "leftLateralFlexion": "Full range, no pain",
-      "rightRotation": "Limited to 70%",
+      "rightRotation": "Mildly limited",
       "leftRotation": "Full range"
     },
     "neurological": {
@@ -77,17 +77,19 @@
         "lumbar": "Hyperalgesia over right L4-S1 paraspinals",
         "gluteal": "Mild hyperalgesia right superior gluteal region"
       },
-      "mckenzieResponse": {
-        "repeatedFlexion": "Peripheralization - increased thigh symptoms after 5 reps",
-        "repeatedExtension": "Centralization - thigh symptoms abolished after 10 reps, mild local LBP remains",
-        "clinicalNote": "Centralization with extension = extension IS the directional preference. This is the key finding."
+      "mdtResponse": {
+        "note": "MDT (Mechanical Diagnosis and Therapy) is synonymous with McKenzie. A minimum of 10 reps of end-range loading in a given vector is required to determine the symptom trend.",
+        "repeatedFlexionInStanding": "Peripheralization - posterior thigh symptoms increase over 10 reps of repeated end-range flexion",
+        "repeatedExtensionInLying": "Centralization - posterior thigh symptoms progressively regress and abolish over 10 reps of prone press-ups. Mild local LBP remains.",
+        "clinicalNote": "Centralization is observed over multiple reps, not on a single rep. When leg symptoms regress after repeated end-range extension loading, extension IS the directional preference. This is the key finding."
       },
-      "indexMovement": "Forward bending to tie shoes - reproduces posterior thigh pain 7/10",
+      "indexMovement": "Seated slump test - reproduces posterior thigh pain in a controlled, repeatable manner. In acute severe cases, using a controlled exam procedure as the index is preferred over provocative functional movements like forward bending, which can set the patient back if not carefully performed.",
       "capDemonstration": {
-        "baseline": "Forward bending pain 7/10",
-        "afterRepeatedExtension": "Forward bending pain 2/10",
+        "baseline": "Seated slump test reproduces posterior thigh pain",
+        "intervention": "10 reps prone press-ups (repeated end-range extension loading)",
+        "retest": "Seated slump test - reduced reproduction of posterior thigh pain",
         "patientResponse": "Patient visibly surprised and relieved - 'I can't believe that worked so fast'",
-        "clinicalNote": "This within-visit demonstration builds patient agency and confidence"
+        "clinicalNote": "This within-visit demonstration builds patient agency and confidence. Any exam procedure that clearly reproduced symptoms (seated slump, SLR, or forward bending) may serve as the index for retest."
       }
     },
     "palpation": "Tenderness over right L4-5 and L5-S1 facets, paraspinal hypertonicity R > L, no step-off"
@@ -136,17 +138,17 @@
       "hints": [
         "What would a purely structural/mechanical diagnosis focus on?",
         "How does the NCA framework reframe the tight paraspinals?",
-        "How would you use analogy to explain disc mechanics to a patient?"
+        "How would you explain to the patient why extension exercises help?"
       ],
       "expectedConcepts": [
         "Mesodermal lens: Disc herniation causing mechanical compression, tight muscles are the problem requiring release, joint dysfunction requiring manipulation",
         "Neurocentric lens: Nerve root is mechanically sensitized (reduced perfusion from compression), paraspinal hypertonicity is protective (muscles protect nerves), need to reduce threat to neurology rather than force muscle relaxation",
-        "Treatment implications: NCA approach focuses on reducing neural threat through positioning/movement (McKenzie) before aggressive soft tissue work that might increase threat",
-        "Patient narrative example: 'The disc between your vertebrae is like a jelly donut. When you bent forward with that heavy dresser, the jelly got pushed toward the back where the nerve lives. That's why bending forward hurts and makes your leg symptoms worse.'",
-        "'The good news is we can use extension exercises to push the jelly back toward the center. Your body is already trying to protect itself - those tight back muscles are guarding the irritated nerve. That's actually helpful right now.'",
-        "'Think of the exercises like medicine - we're going to dose them throughout the day to keep that disc material where it belongs.'"
+        "Treatment implications: NCA approach focuses on reducing neural threat through positioning/movement (MDT/McKenzie) before aggressive soft tissue work that might increase threat",
+        "Disc mechanics: Moving into extension repetitively in this case can push the disc contents away from the nerve roots and spinal cord, reducing threat. Note that the degree of nucleus pulposus migration is highly dependent on the chronological age and injury age of the individual.",
+        "Patient education: Explain that the extension exercises reduce threat to the nerve. The tight back muscles are protective - they are guarding the irritated nerve, which is actually helpful right now.",
+        "Frame the exercises as medicine - dose them throughout the day to manage symptoms and reduce threat to the nerve."
       ],
-      "teachingPoint": "The patient needs a mental model for WHY the exercises work. The 'jelly donut' analogy helps them understand disc mechanics intuitively. Explaining that their tight muscles are protective (not the enemy) reframes their experience and builds trust. This narrative gives them agency - they understand cause and effect."
+      "teachingPoint": "The patient needs a mental model for WHY the exercises work. Explaining that repeated extension can push disc contents away from the nerve, reducing threat, gives them a cause-and-effect understanding. Explaining that their tight muscles are protective (not the enemy) reframes their experience and builds trust. This narrative gives them agency."
     },
     {
       "id": "q4",
@@ -159,13 +161,14 @@
       ],
       "expectedConcepts": [
         "Working diagnosis: Lumbar disc herniation with right L5 or S1 radiculopathy",
-        "Peripheralization with flexion confirms disc as pain generator (flexion increases intradiscal pressure and posteriorly displaces nuclear material)",
-        "Centralization with extension indicates extension IS the directional preference - this is the KEY finding",
+        "MDT (McKenzie): A minimum of 10 reps of end-range loading in a given vector is required to determine the symptom trend - this is a core MDT principle the clinician must understand",
+        "Peripheralization with repeated flexion confirms disc as pain generator (flexion increases intradiscal pressure and posteriorly displaces nuclear material)",
+        "Centralization with repeated extension indicates extension IS the directional preference - this is the KEY finding. Centralization is observed over multiple reps, not on a single rep.",
         "Centralization is a strong positive prognostic indicator for conservative care",
         "Negative Laslett cluster (0/6 tests positive) rules out SI joint as primary pain generator",
         "The combination of centralizing symptoms + negative SI cluster strongly supports discogenic origin"
       ],
-      "teachingPoint": "The McKenzie response is diagnostic and prognostic. When symptoms centralize with repeated extension, extension IS the directional preference - that's the home exercise. Don't overcomplicate with lateral components unless extension alone fails to centralize. The negative Laslett SI cluster helps rule out SI joint involvement."
+      "teachingPoint": "MDT (synonymous with McKenzie) response is diagnostic and prognostic. Centralization requires at least 10 reps of end-range loading to determine the trend - a single rep is insufficient. When leg symptoms regress with repeated extension, extension IS the directional preference - that's the home exercise. Don't overcomplicate with lateral components unless extension alone fails to centralize. The negative Laslett SI cluster helps rule out SI joint involvement."
     },
     {
       "id": "q5",
@@ -177,15 +180,15 @@
         "What is the sequence of interventions based on GNE levels?"
       ],
       "expectedConcepts": [
-        "Index movement: Forward bending (tying shoes) - 7/10 pain",
+        "Index: Use a controlled exam procedure that clearly reproduced symptoms - seated slump, SLR, or forward bending may all serve as the index. In acute severe cases, a controlled test (e.g., seated slump) is preferred over provocative functional movements like forward bending, which can set the patient back.",
         "CRITICAL: Demonstrate symptom modification IN THE VISIT - this builds patient agency",
-        "CAP demonstration: Perform 10 prone press-ups → immediately retest forward bending → patient experiences reduction to 2/10",
-        "Patient sees cause-and-effect: 'When I do this exercise, my pain decreases' - this develops locus of control",
+        "CAP demonstration: Establish baseline with index test → perform 10 prone press-ups → immediately retest index → patient experiences reduced symptom reproduction",
+        "Patient sees cause-and-effect: 'When I do this exercise, my symptoms decrease' - this develops locus of control",
         "The patient's surprised response ('I can't believe that worked') is the moment of buy-in",
-        "Sequence if needed: Address nerve root level first (McKenzie), then peripheral (neurodynamics), then cutaneous (DTM)",
+        "Sequence if needed: Address nerve root level first (MDT/McKenzie), then peripheral (neurodynamics), then cutaneous (DTM)",
         "Manual therapy: Consider manipulation after directional preference confirmed, DTM to hyperalgesic areas after neural threat reduced"
       ],
-      "teachingPoint": "The within-visit symptom modification demonstration is TRANSFORMATIVE. When Mr. Thompson bends forward at 7/10, does his press-ups, then bends forward at 2/10 - he now believes he can control his pain. This is patient agency. Without this demonstration, you're asking him to trust exercises he hasn't seen work."
+      "teachingPoint": "The within-visit symptom modification demonstration is TRANSFORMATIVE. When you establish a baseline with a controlled exam procedure, perform the press-ups, then retest and the patient experiences reduced symptom reproduction - they now believe they can influence their pain. This is patient agency. Without this demonstration, you're asking them to trust exercises they haven't seen work."
     },
     {
       "id": "q6",
@@ -197,7 +200,7 @@
         "What is the progression for retraining forward bending and lifting?"
       ],
       "expectedConcepts": [
-        "DIRECTIONAL PREFERENCE: Prone press-ups 10 reps every 1-2 hours while awake - dose like medication",
+        "DIRECTIONAL PREFERENCE (PPUs): Early in care, prone press-ups (PPUs) may be performed as often as hourly to reduce threat and pain. They are the primary tool for symptom management and breakthrough pain. As symptoms resolve, reduce PPU frequency and shift focus to avoiding known provocative activities/movements and getting stronger overall.",
         "Morning routine: Cat/Camel mobilizations before getting out of bed (the spine is more hydrated and vulnerable in AM)",
         "ADL MODIFICATIONS:",
         "- Brushing teeth: Hip hinge at sink, not spinal flexion - 'nose over toes, butt back'",
@@ -209,9 +212,9 @@
         "Phase 1 - Hip Hinge: Teach sparing strategy - 'chest up, butt back, weight on heels'. Use dowel on spine to monitor neutral. This replaces flexion-based bending.",
         "Phase 2 - Box Squat: Two fingers on L3-5 to monitor lordosis, 'shirt with name on it stays visible' (chest up), arms parallel to floor for counterbalance. Squat to box/chair height.",
         "Phase 3 - Sumo Deadlift: Wide stance, toes out, chest up, butt back, weight on heels, active triceps. This retrains safe lifting pattern for return to activity.",
-        "SELF-MONITORING: If symptoms peripheralize during activity, stop and perform press-ups. If symptoms persist peripherally after press-ups, reduce activity and contact provider."
+        "SELF-MONITORING: If symptoms peripheralize during activity, stop and perform PPUs. If symptoms persist peripherally after PPUs, reduce activity and contact provider."
       ],
-      "teachingPoint": "Home exercise has two components: (1) Directional preference exercises dosed throughout the day for symptom management, and (2) Functional training to correct the faulty movement pattern that caused the injury. Mr. Thompson lifted with a rounded back - he needs to learn the hip hinge pattern to replace that. The progression Hip Hinge → Box Squat → Sumo Deadlift retrains safe movement so he doesn't re-injure himself helping the next friend move."
+      "teachingPoint": "Home exercise has two components: (1) Directional preference exercises (PPUs) dosed frequently early on — possibly hourly — for threat and pain reduction, tapering as symptoms resolve; and (2) Functional training to correct the faulty movement pattern that caused the injury. Mr. Thompson lifted with a rounded back - he needs to learn the hip hinge pattern to replace that. The progression Hip Hinge → Box Squat → Sumo Deadlift retrains safe movement. As the acute phase resolves, the emphasis shifts from PPUs to avoiding provocative activities and getting stronger."
     },
     {
       "id": "q7",
@@ -224,21 +227,23 @@
       ],
       "expectedConcepts": [
         "McKenzie Purgatory: Patient responds initially to directional preference but plateaus before full resolution",
-        "McKenzie addresses the IVF/nerve root level but may not fully address peripheral nerve or cutaneous involvement",
+        "MDT/McKenzie addresses the IVF/nerve root level but may not fully address peripheral nerve or cutaneous involvement",
+        "By this point the patient should have been using PPUs to reduce threat and pain early on, and as symptoms improved, reducing PPU frequency while focusing on avoiding provocative activities and getting stronger overall",
         "Re-examine with GNE lens: Is skin rolling still hyperalgesic? Is slump test still positive?",
         "If cutaneous hyperalgesia persists: Add DTM to the hyperalgesic paraspinal and gluteal regions identified on initial exam",
         "If neural tension persists: Add sciatic nerve sliders (not tensioners initially) to improve nerve tract mobility",
-        "The CAP guides progression: After DTM or neurodynamics, retest index movement - if further improvement, you've identified a contributing level McKenzie alone didn't address",
-        "This is the NCA value-add: McKenzie is powerful but addresses one level. NCA integrates multiple levels for complete resolution."
+        "The CAP guides progression: After DTM or neurodynamics, retest index — if further improvement, you've identified a contributing level MDT alone didn't address",
+        "This is the NCA value-add: MDT/McKenzie is powerful but addresses one level. NCA integrates multiple levels for complete resolution."
       ],
-      "teachingPoint": "Many patients plateau with McKenzie alone because other neurological levels remain sensitized. The protective paraspinal tension may have created fascial adhesions affecting cutaneous nerves (like cluneal nerves). The disc may have healed but secondary neural sensitivity persists. NCA's multi-level approach - adding DTM for cutaneous, neurodynamics for peripheral nerve - provides escape from McKenzie Purgatory."
+      "teachingPoint": "Many patients plateau with MDT/McKenzie alone because other neurological levels remain sensitized. The protective paraspinal tension may have created fascial adhesions affecting cutaneous nerves (like cluneal nerves). The disc may have healed but secondary neural sensitivity persists. NCA's multi-level approach — adding DTM for cutaneous, neurodynamics for peripheral nerve — provides escape from McKenzie Purgatory."
     }
   ],
 
   "keyTakeaways": [
-    "Centralization with extension = extension IS the directional preference. Don't overcomplicate.",
-    "Within-visit symptom modification demonstration builds patient agency - they must SEE it work",
-    "Patient narrative ('jelly donut' analogy) helps them understand cause-and-effect and take ownership",
+    "MDT (synonymous with McKenzie): Requires at least 10 reps of end-range loading to determine symptom trend. Centralization with extension = extension IS the directional preference. Don't overcomplicate.",
+    "Within-visit symptom modification demonstration builds patient agency - they must SEE it work. Use a controlled exam procedure as the index in acute severe cases.",
+    "Extension exercises can push disc contents away from nerve roots, reducing threat. Frame exercises as medicine the patient controls.",
+    "PPUs early and often (possibly hourly) for threat/pain reduction. As symptoms resolve, reduce PPU frequency, avoid provocative activities, and focus on getting stronger.",
     "ADL modification is essential: hip hinge at sink, golfer's pick-up, Cat/Camel for AM",
     "Functional training progression: Hip Hinge → Box Squat → Sumo Deadlift corrects faulty movement patterns",
     "McKenzie Purgatory: If plateau occurs, use GNE to identify other levels (cutaneous, peripheral nerve) and add DTM/neurodynamics",
