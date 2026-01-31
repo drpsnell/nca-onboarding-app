@@ -9,9 +9,9 @@
       "id": "draft-001",
       "file": "draft-case-001.json",
       "title": "The Weekend Warrior",
-      "status": "draft",
+      "status": "approved",
       "region": "lower_quarter",
-      "difficulty": "intermediate",
+      "difficulty": "easy",
       "primaryCondition": "Lumbar disc herniation with radiculopathy",
       "keyConcepts": ["McKenzie", "directional_preference", "centralization", "GNE", "CAP", "patient_agency", "hip_hinge", "ADL_modification"]
     },
