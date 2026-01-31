@@ -1,0 +1,228 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String             @id @default(cuid())
+  email            String             @unique
+  displayName      String
+  role             Role               @default(CLINICIAN)
+  licenseNumber    String?
+  licenseState     String?
+  licenseType      String?            // DC, PT, DO, etc.
+  createdAt        DateTime           @default(now())
+  attempts         CaseAttempt[]
+  assist           AssistUsage[]
+  auditLogs        AuditLog[]
+  moduleProgress   ModuleProgress[]
+  evaluations      CourseEvaluation[]
+  ceCompletions    CECompletion[]
+  badges           UserBadge[]
+}
+
+model CaseStudy {
+  id             String             @id @default(cuid())
+  title          String
+  synopsis       String
+  contentUrl     String?
+  complexity     Int                @default(1)
+  active         Boolean            @default(true)
+  creditHours    Float?
+  version        String             @default("1.0")
+  approvalDate   DateTime?
+  expirationDate DateTime?
+  attempts       CaseAttempt[]
+  evaluations    CourseEvaluation[]
+  ceCompletions  CECompletion[]
+}
+
+model CaseAttempt {
+  id                    String          @id @default(cuid())
+  userId                String
+  caseStudyId           String
+  status                AttemptStatus   @default(IN_PROGRESS)
+  score                 Int?
+  rubricVersion         String?
+  startedAt             DateTime        @default(now())
+  completedAt           DateTime?
+  durationSec           Int?
+  notes                 String?
+  detailJson            Json?
+  questionsAnswered     Int             @default(0)
+  questionResponses     Json?           // Array of per-question response data
+  selfAssessmentRatings Json?           // Per-objective mastery rating 1-5
+  activeSeconds         Int             @default(0)
+  attemptNumber         Int             @default(1)
+  ceEligible            Boolean         @default(false)
+  disclaimerAcceptedAt  DateTime?
+
+  user         User              @relation(fields: [userId], references: [id])
+  caseStudy    CaseStudy         @relation(fields: [caseStudyId], references: [id])
+  evaluation   CourseEvaluation?
+  ceCompletion CECompletion?
+
+  @@index([userId])
+  @@index([caseStudyId])
+  @@index([completedAt])
+}
+
+model CourseEvaluation {
+  id                    String   @id @default(cuid())
+  userId                String
+  caseStudyId           String
+  attemptId             String   @unique
+  objectivesMet         Int      // Likert 1-5
+  contentRelevance      Int      // Likert 1-5
+  contentEvidence       Int      // Likert 1-5
+  materialQuality       Int      // Likert 1-5
+  timeAppropriate       Int      // Likert 1-5
+  wouldRecommend        Int      // Likert 1-5
+  mostValuable          String?
+  leastValuable         String?
+  suggestedImprovements String?
+  objectiveRatings      Json?    // Per-objective attainment ratings
+  createdAt             DateTime @default(now())
+
+  user      User        @relation(fields: [userId], references: [id])
+  caseStudy CaseStudy   @relation(fields: [caseStudyId], references: [id])
+  attempt   CaseAttempt @relation(fields: [attemptId], references: [id])
+
+  @@index([userId])
+  @@index([caseStudyId])
+}
+
+model CECompletion {
+  id                String      @id @default(cuid())
+  userId            String
+  caseStudyId       String
+  attemptId         String      @unique
+  creditHours       Float
+  completedAt       DateTime    @default(now())
+  // Snapshot fields for 5-year PACE retention
+  userName          String
+  userLicense       String?
+  courseTitle        String
+  durationMinutes   Int
+  caseVersion       String
+  certificateNumber String      @unique
+
+  user      User        @relation(fields: [userId], references: [id])
+  caseStudy CaseStudy   @relation(fields: [caseStudyId], references: [id])
+  attempt   CaseAttempt @relation(fields: [attemptId], references: [id])
+
+  @@index([userId])
+  @@index([caseStudyId])
+  @@index([completedAt])
+}
+
+model UserBadge {
+  id        String   @id @default(cuid())
+  userId    String
+  badgeType String
+  awardedAt DateTime @default(now())
+  metadata  Json?
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model AssistUsage {
+  id        String   @id @default(cuid())
+  userId    String?
+  createdAt DateTime @default(now())
+  inputLen  Int
+  resultLen Int
+
+  user      User?    @relation(fields: [userId], references: [id])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  target    String?
+  createdAt DateTime @default(now())
+
+  user      User?    @relation(fields: [userId], references: [id])
+}
+
+enum Role {
+  CLINICIAN
+  ADMIN
+}
+
+enum AttemptStatus {
+  IN_PROGRESS
+  COMPLETED
+  ABANDONED
+}
+
+model Module {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  title       String
+  description String
+  category    ModuleCategory
+  order       Int              @default(0)
+  contentPath String?          // Path to content file for RAG
+  videoUrl    String?          // Video URL if applicable
+  duration    Int?             // Estimated duration in minutes
+  active      Boolean          @default(true)
+  createdAt   DateTime         @default(now())
+  progress    ModuleProgress[]
+  readings    Reading[]
+}
+
+model ModuleProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  moduleId    String
+  status      ProgressStatus @default(NOT_STARTED)
+  completedAt DateTime?
+  quizScore   Int?
+  timeSpent   Int      @default(0) // seconds
+
+  user   User   @relation(fields: [userId], references: [id])
+  module Module @relation(fields: [moduleId], references: [id])
+
+  @@unique([userId, moduleId])
+  @@index([userId])
+  @@index([moduleId])
+}
+
+model Reading {
+  id       String  @id @default(cuid())
+  moduleId String
+  title    String
+  author   String?
+  type     String  // BOOK, ARTICLE, REFERENCE
+  filePath String?
+  url      String?
+  required Boolean @default(false)
+
+  module Module @relation(fields: [moduleId], references: [id])
+
+  @@index([moduleId])
+}
+
+enum ModuleCategory {
+  DTM           // Dermal Traction Method
+  FYOB          // FYOB Strength
+  FOUNDATIONS   // Foundational reading
+  CASE_STUDY    // Clinical case studies
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}

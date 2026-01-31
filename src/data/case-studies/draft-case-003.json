@@ -1,0 +1,249 @@
+{
+  "id": "draft-003",
+  "status": "draft",
+  "title": "The Frustrated Disc Patient",
+  "difficulty": "advanced",
+  "region": "lower_quarter",
+  "primaryConcepts": ["cluneal_neuralgia", "maigne_syndrome", "post_disc_herniation", "secondary_entrapment", "DTM"],
+
+  "presentation": {
+    "demographics": {
+      "age": 58,
+      "sex": "Female",
+      "occupation": "Retired nurse"
+    },
+    "chiefComplaint": "Bilateral buttock and flank pain persisting despite 'successful' disc treatment 8 months ago.",
+    "hpiNarrative": "Mrs. Chen is a 58-year-old retired nurse who presents with bilateral buttock and flank pain that has persisted for approximately 8 months following what was described as successful conservative treatment for an L4-5 disc herniation. Her original presentation 14 months ago was classic right-sided sciatica with pain radiating to the posterior thigh and calf. She responded well to McKenzie extension exercises and her leg pain fully resolved within 6 weeks. However, she notes that while her leg pain is gone, she has developed a different pain pattern: bilateral aching over the iliac crests, occasionally wrapping around to her lateral hips, and sometimes extending into her lower flanks. She describes this as a 'different quality' than her original disc pain - more of a diffuse ache rather than the sharp radiating pain. The pain is worse with prolonged standing, walking, and especially with extension activities. She has seen multiple providers who have told her 'the disc is healed' based on repeat MRI and she should be fine, but she continues to suffer. She is frustrated and beginning to worry something was missed. She denies leg symptoms, numbness, tingling, or weakness. No bowel/bladder issues.",
+    "pastMedicalHistory": [
+      "L4-5 disc herniation - 14 months ago, treated conservatively, leg symptoms resolved",
+      "Osteopenia - diagnosed 3 years ago",
+      "Hypertension - controlled",
+      "Compression fracture T12 - 5 years ago, treated conservatively"
+    ],
+    "socialHistory": {
+      "occupation": "Retired 2 years, previously worked as hospital nurse for 30 years (heavy lifting)",
+      "exercise": "Walks daily 2 miles, gentle yoga 2x/week",
+      "smoking": "Never",
+      "alcohol": "Rare"
+    },
+    "medicationsAllergies": {
+      "current": ["Amlodipine 5mg daily", "Calcium + Vitamin D", "Acetaminophen PRN"],
+      "allergies": "Penicillin"
+    }
+  },
+
+  "physicalExam": {
+    "observation": "Stands with flattened lumbar lordosis. Moves cautiously into extension. Gait normal. No antalgic pattern.",
+    "activeROM": {
+      "flexion": "Full range, no pain",
+      "extension": "Limited to 70% with bilateral buttock pain at end range",
+      "lateralFlexion": "Full range bilateral with mild pulling at end range",
+      "rotation": "Full range bilateral"
+    },
+    "neurological": {
+      "motorTesting": "5/5 throughout bilateral lower extremities",
+      "sensory": "Intact to light touch in all dermatomal distributions",
+      "reflexes": {
+        "patellar": "2+ bilateral",
+        "achilles": "2+ bilateral"
+      }
+    },
+    "specialTests": {
+      "seatedSlump": "Negative bilateral",
+      "straightLegRaise": "Negative bilateral - 80 degrees without reproduction",
+      "femoralNerveStretch": "Negative bilateral",
+      "laslett_cluster": {
+        "distraction": "Negative",
+        "compression": "Negative",
+        "thighThrust": "Negative",
+        "sacralThrust": "Negative",
+        "gaenslenRight": "Negative",
+        "gaenslenLeft": "Negative"
+      },
+      "FABER": "Negative bilateral"
+    },
+    "ncaSpecificFindings": {
+      "skinRolling": {
+        "lumbosacralJunction": "Marked hyperalgesia bilateral over lumbodorsal fascia at L4-S1",
+        "iliacCrest": "Significant hyperalgesia bilateral along iliac crest - patient states 'that's exactly my pain'",
+        "superiorGluteal": "Hyperalgesia bilateral superior gluteal region",
+        "lateralHip": "Hyperalgesia bilateral over TFL region"
+      },
+      "clunealNervePalpation": {
+        "SCN_medial": "Tender with palpable thickening bilateral",
+        "SCN_middle": "Tender bilateral, right > left",
+        "SCN_lateral": "Mildly tender bilateral"
+      },
+      "mckenzieResponse": {
+        "repeatedFlexion": "No change in symptoms",
+        "repeatedExtension": "Worsens bilateral buttock pain - not peripheralization, local reproduction",
+        "sidelying_rotation": "Minimal change"
+      },
+      "nerveStrumming": "Strumming over iliac crest reproduces characteristic pain bilaterally, can follow nerve path into buttock",
+      "indexMovement": "Prone press-up (extension) - reproduces bilateral buttock/flank pain 6/10",
+      "postDTMResponse": "After DTM to bilateral iliac crest and superior gluteal region for 3 minutes each side, prone press-up pain reduced to 2/10"
+    },
+    "palpation": "Lumbodorsal fascia thickened and adhered to underlying tissue bilateral. Nodular thickening at iliac crest where SCN emerges. Paraspinal muscles mildly hypertonic L3-S1."
+  },
+
+  "socraticQuestions": [
+    {
+      "id": "q1",
+      "phase": "assessment",
+      "question": "This patient had 'successful' disc treatment but still has pain. What does the pattern of her current symptoms tell you, and why might previous providers have missed the diagnosis?",
+      "hints": [
+        "Compare the original symptom pattern to current symptoms",
+        "What is the distribution of current pain?",
+        "Why would standard orthopedic and neurological tests be negative?"
+      ],
+      "expectedConcepts": [
+        "Original symptoms: Unilateral radicular pain following dermatomal pattern (nerve root compression)",
+        "Current symptoms: Bilateral, non-dermatomal, local to buttock/flank/lateral hip (different pain generator)",
+        "Previous providers tested for: disc (MRI), nerve root (SLR, motor/sensory), SI joint (Laslett) - all negative",
+        "They missed: superficial cutaneous neurology (cluneal nerves) which doesn't show on imaging and isn't tested by standard neuro exam",
+        "Key insight: Standard physical exam is designed to find mesodermal and deep neurological problems - it doesn't assess mechanical sensitivity of cutaneous nerves"
+      ],
+      "teachingPoint": "Cluneal neuralgia is commonly missed because it doesn't fit the standard diagnostic framework. MRI won't show it, SLR won't provoke it, and motor/sensory exam will be normal. You have to specifically look for it with skin rolling and nerve palpation."
+    },
+    {
+      "id": "q2",
+      "phase": "assessment",
+      "question": "Explain the pathophysiology of how this patient developed cluneal neuralgia secondary to her disc herniation. What is the mechanism?",
+      "hints": [
+        "What happens to paraspinal muscles during acute disc herniation?",
+        "What happens to lumbodorsal fascia in response to chronic load?",
+        "Where do the superior cluneal nerves emerge?"
+      ],
+      "expectedConcepts": [
+        "During acute disc herniation: paraspinal muscles contract protectively ('muscles protect nerves')",
+        "Prolonged protective guarding + reduced lumbar lordosis = sustained load on lumbodorsal fascia",
+        "Fascia responds to load by remodeling - fibroblasts deposit collagen, fascia thickens",
+        "Superior cluneal nerves (L1-3) emerge through osteofibrous hiatus in lumbodorsal fascia over iliac crest",
+        "Fascial thickening narrows the hiatus, creating entrapment neuropathy",
+        "The disc healed, but the secondary fascial changes and nerve entrapment persist",
+        "Extension worsens symptoms because it compresses the nerve against the ilium"
+      ],
+      "teachingPoint": "Cluneal neuralgia is often a secondary condition following disc injury. The protective mechanisms that helped during acute phase create lasting fascial changes that entrap superficial nerves. The disc can heal completely while this secondary problem persists."
+    },
+    {
+      "id": "q3",
+      "phase": "assessment",
+      "question": "The patient also has symptoms over the lateral hip/TFL region. Using your knowledge of Maigne syndrome, explain this distribution. What nerves are involved?",
+      "hints": [
+        "What is the innervation pattern of the flank and lateral hip?",
+        "Where do the iliohypogastric and ilioinguinal nerves originate?",
+        "How did Robert Maigne describe this syndrome?"
+      ],
+      "expectedConcepts": [
+        "Maigne syndrome: T12-L2 origin of flank and lateral hip pain",
+        "Lateral branch of iliohypogastric nerve courses over TFL area - this is commonly misdiagnosed as TFL/ITB problem",
+        "Superior cluneal nerves (L1-3) cover the gluteal region",
+        "Both nerve groups can be affected by fascial thickening and remodeling after disc injury",
+        "Maigne noted this pattern in patients with thoracolumbar junction problems",
+        "The bilateral distribution suggests a postural/fascial mechanism rather than unilateral nerve root issue",
+        "Her prior T12 compression fracture may have predisposed to thoracolumbar junction dysfunction"
+      ],
+      "teachingPoint": "Maigne syndrome helps explain the lateral hip and flank pain that doesn't fit typical radicular patterns. The iliohypogastric nerve's lateral branch is frequently the source of 'TFL pain' or 'lateral hip pain' that doesn't respond to hip or ITB treatment."
+    },
+    {
+      "id": "q4",
+      "phase": "diagnosis",
+      "question": "What is your working diagnosis? How did the skin rolling and DTM response confirm this?",
+      "hints": [
+        "What did the skin rolling reveal?",
+        "What does nerve strumming along the iliac crest indicate?",
+        "How does the dramatic DTM response support your diagnosis?"
+      ],
+      "expectedConcepts": [
+        "Working diagnosis: Bilateral superior cluneal neuralgia with iliohypogastric involvement (Maigne syndrome) secondary to prior disc herniation",
+        "Skin rolling: Marked hyperalgesia in exact distribution of symptoms confirms cutaneous nerve involvement",
+        "Nerve strumming: Reproduces characteristic pain and can trace the nerve path - diagnostic for entrapment",
+        "Palpable thickening at SCN emergence points indicates fascial entrapment",
+        "DTM response: 6/10 to 2/10 improvement (67% reduction) with superficial nerve technique confirms cutaneous nerve as primary driver",
+        "The fact that DTM (addressing superficial nerves) dramatically improved the index movement validates the diagnosis"
+      ],
+      "teachingPoint": "The skin rolling exam and DTM response are both diagnostic and therapeutic. When skin rolling reproduces the patient's exact symptoms and DTM dramatically improves the index movement, you have confirmed the cutaneous nerve involvement and demonstrated effective treatment simultaneously."
+    },
+    {
+      "id": "q5",
+      "phase": "treatment",
+      "question": "Design a treatment plan addressing all levels identified. What is the sequence and rationale?",
+      "hints": [
+        "What are the contributing factors at each GNE level?",
+        "Should you address the cutaneous level first or address upstream factors?",
+        "What about the fascial thickening?"
+      ],
+      "expectedConcepts": [
+        "Level 1 - Brain: Education about diagnosis (validation that pain is real, not 'in her head'); explain the mechanism",
+        "Level 2 - Cellular: Review inflammatory contributors (she appears well-controlled with good lifestyle)",
+        "Level 3 - Spinal/IVF: T12-L2 may need mobilization/manipulation given Maigne syndrome connection and prior T12 fracture",
+        "Level 4 - Cutaneous (primary): DTM to all hyperalgesic areas - bilateral iliac crest, superior gluteal, TFL region",
+        "Fascial work: After DTM reduces sensitivity, address fascial thickening with instrument-assisted or manual fascial work",
+        "Sequence: DTM first (reduce neural threat), then deeper fascial work (won't be tolerated if nerves still sensitized)",
+        "Mobilization/manipulation to thoracolumbar junction to address segmental dysfunction"
+      ],
+      "teachingPoint": "Treatment sequence matters. You cannot effectively address fascial adhesions while cutaneous nerves are sensitized - it will be too painful and potentially increase threat. DTM first to desensitize, then progress to deeper work."
+    },
+    {
+      "id": "q6",
+      "phase": "homeExercise",
+      "question": "What home program would you prescribe? Include self-DTM instruction and any movement modifications.",
+      "hints": [
+        "Can the patient perform self-DTM to these areas?",
+        "What movements should be modified?",
+        "What about her walking and yoga program?"
+      ],
+      "expectedConcepts": [
+        "Self-DTM: Teach patient to perform skin traction along iliac crests using fingertips, lateral hip using palm - 60 seconds each area, 3-4x daily",
+        "Can use tools: Soft ball rolling along iliac crest with light pressure (not aggressive foam rolling)",
+        "Movement modification: Avoid sustained extension positions initially; prone lying with pillow under hips",
+        "Walking: Continue - encourage arm swing and avoid overstriding",
+        "Yoga: Avoid deep extension poses (cobra, upward dog) until DTM reduces sensitivity; cat-cow is fine",
+        "Postural: Maintain normal lumbar curve (she's been flattening as protective strategy - no longer needed)",
+        "Progress extension gradually as sensitivity decreases"
+      ],
+      "teachingPoint": "Self-DTM is a powerful home tool for cutaneous nerve conditions. The patient can perform it multiple times daily, accelerating desensitization. Avoid aggressive foam rolling which can actually increase threat to sensitized nerves."
+    }
+  ],
+
+  "keyTakeaways": [
+    "Cluneal neuralgia is commonly missed because standard exam doesn't assess cutaneous nerves",
+    "Post-disc patients often develop secondary cluneal involvement due to fascial remodeling",
+    "Skin rolling is diagnostic - hyperalgesia in symptom distribution confirms cutaneous nerve involvement",
+    "DTM response validates diagnosis and demonstrates treatment effectiveness",
+    "Treatment sequence: desensitize nerves before addressing fascial restrictions",
+    "Maigne syndrome explains lateral hip/flank pain that doesn't fit standard patterns"
+  ],
+
+  "paceMetadata": {
+    "learningObjectives": [
+      "Identify cluneal neuralgia as a secondary condition following disc herniation",
+      "Explain the pathophysiology of fascial entrapment of superior cluneal nerves",
+      "Apply Maigne syndrome concepts to explain lateral hip and flank pain distributions",
+      "Use skin rolling and nerve palpation to diagnose cutaneous nerve involvement",
+      "Sequence treatment appropriately: neural desensitization before fascial work"
+    ],
+    "creditHours": 1.0,
+    "estimatedMinutes": 50,
+    "creditHourJustification": "Advanced case with 6 Socratic questions addressing commonly missed post-disc pathology requiring detailed clinical reasoning across assessment, diagnosis, treatment, and home exercise phases.",
+    "targetAudience": "Licensed chiropractors, physical therapists, osteopaths, and other neuromusculoskeletal clinicians",
+    "prerequisites": "Basic neuromusculoskeletal assessment skills; familiarity with lumbar spine anatomy and cluneal nerve distributions",
+    "author": { "name": "Dr. Patrick Snell", "credentials": "DC" },
+    "conflictOfInterest": "Dr. Patrick Snell is the developer of the NeuroCentric Approach methodology and owner of Solutions Sports and Spine.",
+    "educationalMethods": ["case-based learning", "Socratic questioning", "self-assessment"],
+    "completionCriteria": {
+      "allQuestionsAnswered": true,
+      "selfAssessmentRequired": true,
+      "postActivityEvaluationRequired": true,
+      "minimumActiveMinutes": 50
+    }
+  },
+
+  "references": [
+    "Maigne R. Low back pain of thoracolumbar origin",
+    "Kuniya H et al. Anatomical study of superior cluneal nerve entrapment",
+    "Anderson S et al. Superior cluneal nerve entrapment - a review",
+    "NCA Cluneal Module",
+    "Stecco C. Fascial Manipulation"
+  ]
+}

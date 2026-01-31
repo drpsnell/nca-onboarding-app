@@ -1,0 +1,8 @@
+Welcome to the NCA Onboarding App.
+
+This application demonstrates a minimal Retrieval-Augmented Generation (RAG) setup using LangChain, OpenAI embeddings, and an in-memory vector store. Documents placed in `src/data/docs` with `.txt` or `.md` extensions will be indexed and used for retrieval.
+
+You can ask questions about onboarding, project structure, or any content you place here.
+
+
+

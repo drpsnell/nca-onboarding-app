@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-26",
+  "status": "draft_for_curation",
+  "description": "NCA clinical case study vignettes for Socratic teaching in the NCA Onboarding App",
+
+  "cases": [
+    {
+      "id": "draft-001",
+      "file": "draft-case-001.json",
+      "title": "The Weekend Warrior",
+      "status": "draft",
+      "region": "lower_quarter",
+      "difficulty": "intermediate",
+      "primaryCondition": "Lumbar disc herniation with radiculopathy",
+      "keyConcepts": ["McKenzie", "directional_preference", "centralization", "GNE", "CAP", "patient_agency", "hip_hinge", "ADL_modification"]
+    },
+    {
+      "id": "draft-002",
+      "file": "draft-case-002.json",
+      "title": "The Remote Worker",
+      "status": "draft",
+      "region": "upper_quarter",
+      "difficulty": "intermediate",
+      "primaryCondition": "Cervical radiculitis with brachial plexopathy",
+      "keyConcepts": ["ULNTT", "cervical_distraction", "DTM", "failed_prior_treatment", "double_crush"]
+    },
+    {
+      "id": "draft-003",
+      "file": "draft-case-003.json",
+      "title": "The Frustrated Disc Patient",
+      "status": "draft",
+      "region": "lower_quarter",
+      "difficulty": "advanced",
+      "primaryCondition": "Cluneal neuralgia / Maigne syndrome secondary to disc injury",
+      "keyConcepts": ["cluneal_nerves", "post_disc_sequela", "skin_rolling", "fascial_entrapment", "DTM"]
+    },
+    {
+      "id": "draft-004",
+      "file": "draft-case-004.json",
+      "title": "The Marathon Trainer",
+      "status": "draft",
+      "region": "lower_quarter",
+      "difficulty": "intermediate",
+      "primaryCondition": "Sural nerve mechanical sensitivity",
+      "keyConcepts": ["neural_tracing", "sciatic_tract", "sliders_vs_tensioners", "muscles_protect_nerves", "return_to_sport"]
+    },
+    {
+      "id": "draft-005",
+      "file": "draft-case-005.json",
+      "title": "The Desk Athlete",
+      "status": "draft",
+      "region": "upper_quarter",
+      "difficulty": "intermediate",
+      "primaryCondition": "Radial nerve double crush - cervical to PIN",
+      "keyConcepts": ["radial_tunnel", "double_crush", "neural_tracing", "lateral_elbow_pain", "ergonomics"]
+    }
+  ],
+
+  "conceptsCovered": {
+    "assessment": [
+      "Graded Neuro Exam (GNE) - Brain to Cellular",
+      "Clinical Audit Process (CAP)",
+      "Neural tracing - trace upstream until sensitivity ends",
+      "Skin rolling for cutaneous nerve assessment",
+      "Neural tension testing (ULNTT, slump, SLR)",
+      "McKenzie directional preference"
+    ],
+    "conceptualization": [
+      "Ectodermal vs mesodermal lens",
+      "Muscles protect nerves",
+      "Double crush hypothesis",
+      "Secondary neural entrapment post-injury",
+      "Reframing failed diagnoses"
+    ],
+    "treatment": [
+      "Sequencing interventions based on CAP response",
+      "Proximal to distal in double crush",
+      "Dermal Traction Method (DTM)",
+      "Neurodynamics - sliders vs tensioners",
+      "McKenzie extension/rotation protocols"
+    ],
+    "homeExercise": [
+      "Self-DTM techniques",
+      "Nerve slider prescription",
+      "Directional preference exercises",
+      "Ergonomic modification",
+      "Graded return to activity"
+    ]
+  },
+
+  "paceProvider": {
+    "name": "Solutions Sports and Spine",
+    "recordRetentionYears": 5,
+    "reportingDeadlineDays": 30
+  },
+
+  "curatorNotes": {
+    "instructions": "Review each case for clinical accuracy, appropriate difficulty, and alignment with NCA teaching. Mark status as 'approved' when ready for production.",
+    "feedbackFields": ["clinicalAccuracy", "ncaAlignment", "questionQuality", "difficultyAppropriate"]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "id": "draft-005",
+  "status": "draft",
+  "title": "The Desk Athlete",
+  "difficulty": "intermediate",
+  "region": "upper_quarter",
+  "primaryConcepts": ["lateral_elbow_pain", "radial_nerve", "neural_tracing", "posterior_interosseous", "double_crush"],
+
+  "presentation": {
+    "demographics": {
+      "age": 44,
+      "sex": "Male",
+      "occupation": "Graphic Designer"
+    },
+    "chiefComplaint": "Right lateral elbow and forearm pain for 3 months, diagnosed as tennis elbow.",
+    "hpiNarrative": "Mr. Williams is a 44-year-old graphic designer who presents with right lateral elbow pain that has been present for 3 months. He was diagnosed with lateral epicondylitis ('tennis elbow') by his PCP and has tried rest, a counterforce brace, topical NSAIDs, and eccentric wrist exercises without significant improvement. He describes the pain as aching at the lateral elbow that radiates into his dorsal forearm, sometimes reaching the wrist. The pain is worse with gripping activities, using his computer mouse, and lifting objects with an extended elbow. He notes the pain is particularly bad when reaching to grab items from shelves. He does not play tennis but uses a computer mouse and stylus 8-10 hours daily. He reports occasional neck stiffness on the right side that he attributes to his posture at work. He denies numbness or tingling but notes his grip sometimes feels 'weaker' though formal strength testing has been normal.",
+    "pastMedicalHistory": [
+      "Neck stiffness - intermittent for years, managed with massage",
+      "Right shoulder impingement - 2 years ago, resolved with PT",
+      "No diabetes, thyroid disease"
+    ],
+    "socialHistory": {
+      "occupation": "Graphic designer, heavy computer/mouse use 8-10 hours daily, uses drawing tablet with stylus",
+      "exercise": "Light weightlifting 2x/week, recently stopped due to elbow pain",
+      "smoking": "Former - quit 10 years ago",
+      "alcohol": "Moderate"
+    },
+    "medicationsAllergies": {
+      "current": ["Topical diclofenac PRN"],
+      "allergies": "NKDA"
+    }
+  },
+
+  "physicalExam": {
+    "observation": "Sits with forward head posture and internally rotated shoulders. Holds right arm close to body. Wears counterforce brace at proximal forearm.",
+    "cervicalROM": {
+      "flexion": "Full",
+      "extension": "Limited to 70% with local stiffness",
+      "rightRotation": "Limited to 75% with right neck tightness",
+      "leftRotation": "Full",
+      "rightLateralFlexion": "Limited to 70%",
+      "leftLateralFlexion": "Full"
+    },
+    "elbowROM": {
+      "flexion": "Full",
+      "extension": "Full but tight end-feel",
+      "pronation": "Full",
+      "supination": "Full with mild discomfort"
+    },
+    "wristROM": "Full in all planes",
+    "neurological": {
+      "motorTesting": {
+        "wristExtension": "5/5 bilateral",
+        "fingerExtension": "5/5 bilateral",
+        "gripStrength": "5/5 bilateral (formal testing)",
+        "supination": "5/5 bilateral"
+      },
+      "sensory": "Intact to light touch throughout",
+      "reflexes": {
+        "biceps": "2+ bilateral",
+        "triceps": "2+ bilateral",
+        "brachioradialis": "2+ bilateral"
+      }
+    },
+    "specialTests": {
+      "cozens": "Positive right - pain at lateral epicondyle with resisted wrist extension",
+      "millsTest": "Positive right - pain with passive wrist flexion and elbow extension",
+      "maudsleyTest": "Positive right - pain with resisted middle finger extension (PIN involvement)",
+      "ULNTT_radialBias": "Positive right - reproduces lateral elbow and forearm symptoms, modulated by cervical position",
+      "ULNTT_median": "Negative",
+      "ULNTT_ulnar": "Negative",
+      "spurlings": "Negative for radicular symptoms"
+    },
+    "ncaSpecificFindings": {
+      "skinRolling": {
+        "lateralElbow": "Hyperalgesia over lateral epicondyle and common extensor origin",
+        "dorsalForearm": "Hyperalgesia along radial nerve distribution",
+        "posteriorArm": "Mild hyperalgesia posterior arm over radial nerve in spiral groove",
+        "cervicalParaspinals": "Mild hyperalgesia C5-6 right"
+      },
+      "neuralTracing": {
+        "description": "Traced radial nerve distribution from dorsal forearm proximally",
+        "dorsalForearm": "Hyperalgesic - symptom reproduction",
+        "lateralElbow": "Hyperalgesic - reproduces primary complaint",
+        "posteriorArm": "Mild hyperalgesia at spiral groove",
+        "axilla": "Mild hyperalgesia",
+        "cervicalParaspinals": "Mild hyperalgesia - sensitivity continues",
+        "interpretation": "Sensitivity extends from forearm all the way to cervical spine - suggests cervical contribution (double crush)"
+      },
+      "radialTunnelPalpation": "Tender at arcade of Frohse",
+      "cervicalTractionTest": "With manual cervical traction, Mills test becomes less provocative",
+      "mckenzieResponse": {
+        "cervicalRetractions": "Mild reduction in lateral elbow symptoms",
+        "cervicalRetractionsWithExtension": "Further reduction"
+      },
+      "indexMovement": "Lifting coffee mug with extended elbow - pain 6/10",
+      "postInterventionResponse": {
+        "afterCervicalRetractions": "Mug lift pain 5/10",
+        "afterRadialNerveSliders": "Mug lift pain 3/10",
+        "afterDTM_lateralElbow": "Mug lift pain 1/10"
+      }
+    },
+    "palpation": "Tenderness lateral epicondyle, common extensor origin, arcade of Frohse. Mobile painful point at radial tunnel. Cervical paraspinal hypertonicity C4-7 right."
+  },
+
+  "socraticQuestions": [
+    {
+      "id": "q1",
+      "phase": "assessment",
+      "question": "This patient has failed standard tennis elbow treatment. What does the neural tracing reveal about why the standard approach may have missed the full picture?",
+      "hints": [
+        "Where did you start and where did sensitivity extend?",
+        "What does continued sensitivity into the cervical spine suggest?",
+        "What is the 'double crush' hypothesis?"
+      ],
+      "expectedConcepts": [
+        "Neural tracing started at dorsal forearm (symptom area) - hyperalgesic",
+        "Traced proximally: forearm → lateral elbow → posterior arm → axilla → cervical spine",
+        "Sensitivity did NOT 'run out' - continued all the way to cervical paraspinals",
+        "This indicates the entire radial nerve tract is sensitized with cervical contribution",
+        "Double crush: proximal compression/irritation (cervical) sensitizes entire nerve tract, making distal sites more vulnerable",
+        "Standard tennis elbow treatment (local modalities, eccentric exercises) addresses only the distal site",
+        "The cervical component must be addressed for sustained improvement",
+        "His history of neck stiffness, prior shoulder impingement (same side), and desk posture all point to cervical driver"
+      ],
+      "teachingPoint": "When neural sensitivity extends to the cervical spine, you have a double crush scenario. Treating only the elbow will provide temporary relief at best. The cervical 'first crush' must be addressed to fully resolve the distal 'second crush' at the radial tunnel."
+    },
+    {
+      "id": "q2",
+      "phase": "assessment",
+      "question": "The patient has a positive Maudsley test (resisted middle finger extension). What structure does this implicate and how does it connect to the neurological findings?",
+      "hints": [
+        "What nerve passes through the supinator?",
+        "What does the PIN innervate?",
+        "How might neural sensitivity create this finding?"
+      ],
+      "expectedConcepts": [
+        "Maudsley test implicates the posterior interosseous nerve (PIN) at the arcade of Frohse",
+        "PIN is a branch of the radial nerve that passes between the two heads of supinator",
+        "PIN innervates finger extensors (EDC) and wrist extensors",
+        "A sensitized PIN will be mechanically irritated by resisted finger extension (nerve compressed against taut supinator)",
+        "This is often called 'radial tunnel syndrome' when PIN is primary site",
+        "The combination of positive Maudsley AND proximal sensitivity up to cervical spine suggests: PIN is the most symptomatic site, but cervical is the driver",
+        "Sensitized nerve root → sensitized radial nerve tract → vulnerable to entrapment at anatomical compression points (spiral groove, arcade of Frohse)"
+      ],
+      "teachingPoint": "The PIN at the arcade of Frohse is a common 'second crush' site for the radial nerve. A positive Maudsley test suggests PIN involvement. However, in a double crush scenario, treating only the radial tunnel will not provide lasting relief if the cervical 'first crush' is not addressed."
+    },
+    {
+      "id": "q3",
+      "phase": "conceptualization",
+      "question": "Compare the mesodermal interpretation (lateral epicondylitis) with the neurocentric interpretation. What are the treatment implications of each?",
+      "hints": [
+        "What does 'lateral epicondylitis' assume?",
+        "What does positive neural tension testing suggest instead?",
+        "How do the CAP results inform this?"
+      ],
+      "expectedConcepts": [
+        "Mesodermal interpretation: Degenerative tendinopathy at common extensor origin due to overuse",
+        "Treatment: Rest, eccentric loading, counterforce brace, local anti-inflammatory, possibly injection/surgery",
+        "Neurocentric interpretation: Sensitized radial nerve tract with cervical driver and distal entrapment at arcade of Frohse",
+        "The positive ULNTT with cervical modulation confirms neural involvement",
+        "CAP results: Greatest improvement with DTM (cutaneous nerve), then sliders (peripheral nerve), then cervical retraction (nerve root)",
+        "This indicates primary driver is neural, not tendinous",
+        "The 'tendinopathy' may be secondary to altered motor control from sensitized neurology",
+        "Treatment: Address cervical level, mobilize radial nerve tract, DTM to cutaneous component"
+      ],
+      "teachingPoint": "Many cases of 'lateral epicondylitis' are actually radial nerve dysfunction. The positive neural tension tests with cervical modulation and the superior response to neural interventions (vs local eccentric loading) support a neurocentric diagnosis. This explains the high failure rate of standard tendinopathy protocols."
+    },
+    {
+      "id": "q4",
+      "phase": "treatment",
+      "question": "Design a treatment sequence using the CAP results. Where do you start and why?",
+      "hints": [
+        "What is the treatment sequence based on intervention response?",
+        "Should you start at the site of most sensitivity or the proximal driver?",
+        "How do you progress?"
+      ],
+      "expectedConcepts": [
+        "Sequence should generally work proximal to distal when cervical involvement is present",
+        "Start: Cervical retractions (address nerve root level first - reduce 'first crush')",
+        "Next: Radial nerve sliders (improve nerve tract mobility)",
+        "Then: DTM to lateral elbow/forearm (address cutaneous sensitization at symptomatic site)",
+        "Rationale: Addressing proximal driver first reduces overall neural threat, making distal work more effective and tolerable",
+        "CAP validation: After cervical work, retest index (mug lift) - should see improvement. After sliders, retest again. After DTM, retest.",
+        "If improvement plateaus, investigate: Is cervical being maintained? Is ergonomics addressed?",
+        "May add: cervical manipulation/mobilization, radial nerve tensioners (after sliders are tolerated)"
+      ],
+      "teachingPoint": "In double crush presentations, work proximal to distal. Addressing the cervical 'first crush' reduces overall neural threat and makes intervention at the 'second crush' site more effective. Use the CAP at each level to confirm you're on the right track."
+    },
+    {
+      "id": "q5",
+      "phase": "diagnosis",
+      "question": "What is your working diagnosis? How would you communicate this to the patient who has been told he has 'tennis elbow'?",
+      "hints": [
+        "What structures are involved?",
+        "How do you validate the prior diagnosis while reframing?",
+        "What language helps patients understand?"
+      ],
+      "expectedConcepts": [
+        "Working diagnosis: Cervical radiculopathy with radial nerve mechanical sensitivity and posterior interosseous nerve entrapment (double crush syndrome)",
+        "Alternative: Upper quarter neural tension syndrome with radial nerve involvement",
+        "Patient communication: 'You do have pain at the tennis elbow location, but the source isn't just local inflammation. The nerve that goes to that area runs all the way from your neck. Your desk posture has irritated the nerve at your neck, and that's made the whole nerve pathway sensitive. The nerve is also getting pinched where it goes through your forearm muscles. We need to calm down the nerve at your neck first, then work on the elbow.'",
+        "Validate their experience: 'The pain at your elbow is real - we're not saying it's not there. We're saying there's more to the picture that explains why the local treatments haven't worked.'",
+        "Prognostic framing: 'The good news is this typically responds well to treatment - better than true tendon degeneration.'"
+      ],
+      "teachingPoint": "Reframing the diagnosis helps patients understand why prior treatment failed without invalidating their experience. The double crush model is intuitive - 'the nerve runs from your neck to your hand, and it's getting irritated in two places.' This also sets realistic expectations that treatment will address multiple areas."
+    },
+    {
+      "id": "q6",
+      "phase": "homeExercise",
+      "question": "What home program would you prescribe? Address the cervical component, nerve mobility, and ergonomic factors.",
+      "hints": [
+        "What cervical exercises?",
+        "What nerve mobility exercises?",
+        "What ergonomic changes are critical?"
+      ],
+      "expectedConcepts": [
+        "Cervical: Retractions 10x every hour (especially during computer work), retractions with extension 10x 3-4x daily",
+        "Nerve mobility: Radial nerve sliders 2x15 daily - shoulder abduction + elbow extension + wrist/finger flexion, then reverse",
+        "Self-DTM: Gentle skin traction over lateral elbow and dorsal forearm 60 seconds, 3-4x daily",
+        "Ergonomics: Mouse position (not reaching, keep elbow close to body), consider vertical mouse or trackpad, monitor height (reduce forward head posture), regular breaks every 30 minutes",
+        "Avoid: Gripping with extended elbow (modify lifting technique), prolonged mouse use without breaks, sleeping with arm extended",
+        "Brace: May discontinue counterforce brace - it provides compression which may irritate sensitized nerve",
+        "Return to lifting: Gradual, with attention to elbow position (slight flexion, not full extension under load)"
+      ],
+      "teachingPoint": "Ergonomic modification is essential for desk workers with upper quarter neural issues. All the neural work in the clinic will be undone by 8 hours of poor posture at a workstation. Frequent movement breaks and postural correction are as important as the specific exercises."
+    }
+  ],
+
+  "keyTakeaways": [
+    "Many 'tennis elbow' cases are radial nerve dysfunction - test neural tension",
+    "Neural tracing to cervical spine indicates double crush - must address proximal driver",
+    "Work proximal to distal in double crush presentations",
+    "Positive Maudsley test suggests PIN involvement at arcade of Frohse",
+    "CAP validates treatment approach and guides prioritization",
+    "Ergonomic modification is essential for lasting improvement in desk workers"
+  ],
+
+  "paceMetadata": {
+    "learningObjectives": [
+      "Use neural tracing to identify double crush involvement in lateral elbow pain",
+      "Explain posterior interosseous nerve (PIN) anatomy and its role in radial tunnel syndrome",
+      "Contrast mesodermal (lateral epicondylitis) and neurocentric interpretations of the same clinical findings",
+      "Sequence treatment proximal to distal in double crush presentations using CAP validation",
+      "Design an ergonomic-focused home program addressing cervical, peripheral nerve, and cutaneous components"
+    ],
+    "creditHours": 1.0,
+    "estimatedMinutes": 50,
+    "creditHourJustification": "Case includes 6 Socratic questions covering assessment, conceptualization, diagnosis, treatment, and home exercise with emphasis on double crush and failed prior treatment.",
+    "targetAudience": "Licensed chiropractors, physical therapists, osteopaths, and other neuromusculoskeletal clinicians",
+    "prerequisites": "Basic neuromusculoskeletal assessment skills; familiarity with upper extremity peripheral nerve anatomy",
+    "author": { "name": "Dr. Patrick Snell", "credentials": "DC" },
+    "conflictOfInterest": "Dr. Patrick Snell is the developer of the NeuroCentric Approach methodology and owner of Solutions Sports and Spine.",
+    "educationalMethods": ["case-based learning", "Socratic questioning", "self-assessment"],
+    "completionCriteria": {
+      "allQuestionsAnswered": true,
+      "selfAssessmentRequired": true,
+      "postActivityEvaluationRequired": true,
+      "minimumActiveMinutes": 50
+    }
+  },
+
+  "references": [
+    "Shacklock M. Clinical Neurodynamics",
+    "Butler D. The Sensitive Nervous System",
+    "Coppieters MW. Neurodynamic testing of the upper limb",
+    "NCA Elbow Module",
+    "Upton A, McComas A. The double crush in nerve entrapment syndromes"
+  ]
+}

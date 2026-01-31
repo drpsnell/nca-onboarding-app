@@ -1,0 +1,259 @@
+{
+  "id": "draft-004",
+  "status": "draft",
+  "title": "The Marathon Trainer",
+  "difficulty": "intermediate",
+  "region": "lower_quarter",
+  "primaryConcepts": ["sciatic_tract", "sural_nerve", "neural_tracing", "neurodynamics", "graded_exposure"],
+
+  "presentation": {
+    "demographics": {
+      "age": 35,
+      "sex": "Male",
+      "occupation": "Software Engineer"
+    },
+    "chiefComplaint": "Right calf pain with running for 6 weeks, diagnosed as calf strain.",
+    "hpiNarrative": "Mr. Patel is a 35-year-old software engineer training for his first marathon who presents with right calf pain that began 6 weeks ago. He describes the pain as starting gradually during runs and localizing to the posterior-lateral calf. Initially, the pain was worst at the start of his runs, would 'warm up' and improve mid-run, but then worsen again on longer efforts. He notes the pain is worse with faster running, hill repeats, and speed work. He was diagnosed with a gastrocnemius strain by his primary care provider and advised to rest, ice, and stretch. After 3 weeks of rest, he attempted to return to running but the pain returned immediately. He has been doing calf stretches and foam rolling daily without improvement. He is now 10 weeks out from his marathon and becoming anxious about his ability to complete it. He denies back pain, numbness, or tingling. He reports occasional 'tightness' in his right hamstring that he attributes to running.",
+    "pastMedicalHistory": [
+      "Right ankle sprain - 4 years ago, lateral ankle, treated with PT",
+      "Episodic low back stiffness - occasional, self-resolving",
+      "Right plantar fasciitis - 2 years ago, resolved with orthotics and stretching"
+    ],
+    "socialHistory": {
+      "occupation": "Software engineer, sits 10-12 hours/day",
+      "exercise": "Running 5x/week, currently reduced due to pain. Morning runs 5-8 miles, one long run 15-20 miles",
+      "smoking": "Never",
+      "alcohol": "Occasional"
+    },
+    "medicationsAllergies": {
+      "current": ["Ibuprofen PRN (taking daily for past 3 weeks)"],
+      "allergies": "NKDA"
+    }
+  },
+
+  "physicalExam": {
+    "observation": "Athletic build. Walks without antalgic gait. Single leg stance stable bilateral. Slight forward head posture and rounded shoulders (desk posture).",
+    "lumbarROM": {
+      "flexion": "Full range, mild hamstring pull at end range",
+      "extension": "Full range, no pain",
+      "lateralFlexion": "Full bilateral",
+      "rotation": "Full bilateral"
+    },
+    "hipROM": "Full range bilateral, no pain with FABER or FADIR",
+    "neurological": {
+      "motorTesting": "5/5 throughout bilateral lower extremities including ankle plantarflexion, dorsiflexion, inversion, eversion",
+      "sensory": "Intact to light touch throughout",
+      "reflexes": {
+        "patellar": "2+ bilateral",
+        "achilles": "2+ bilateral"
+      }
+    },
+    "specialTests": {
+      "straightLegRaise": "70 degrees bilateral with hamstring tension, no radicular symptoms",
+      "seatedSlump": "Positive right - reproduces posterior calf tightness, modulated by cervical position",
+      "slump_suralBias": "Positive right - ankle inversion + plantarflexion bias reproduces lateral calf symptoms exactly",
+      "proneKneeBend": "Negative bilateral",
+      "thompsonTest": "Negative bilateral"
+    },
+    "ncaSpecificFindings": {
+      "skinRolling": {
+        "posteriorCalf": "Hyperalgesia right posterior-lateral calf",
+        "lateralAnkle": "Hyperalgesia along sural nerve distribution",
+        "poplitealFossa": "Mild hyperalgesia right",
+        "posteriorThigh": "Mild hyperalgesia right distal hamstring",
+        "gluteal": "Normal bilateral",
+        "lumbar": "Normal bilateral"
+      },
+      "neuralTracing": {
+        "description": "Traced sural nerve distribution from lateral malleolus proximally",
+        "lateralCalf": "Hyperalgesic - reproduces symptoms",
+        "poplitealFossa": "Hyperalgesic - common peroneal region",
+        "posteriorThigh": "Mild hyperalgesia at sciatic tract",
+        "gluteal": "Normal - sensitivity 'runs out' here",
+        "interpretation": "Sensitivity extends from calf to posterior thigh but NOT into gluteal region - suggests input point is proximal thigh or popliteal region, not spine"
+      },
+      "mckenzieResponse": {
+        "pronePressupsX20": "40% improvement in slump test response"
+      },
+      "neurodynamicResponse": {
+        "supineSciaticTensionersX20": "50% improvement in slump test response"
+      },
+      "indexMovement": "Single leg calf raise - pain 5/10 at rep 8",
+      "postInterventionResponse": {
+        "afterMcKenzie": "Calf raise pain reduced to 4/10",
+        "afterSciaticTensioners": "Calf raise pain reduced to 2/10",
+        "afterDTM_popliteal": "Calf raise pain reduced to 1/10"
+      }
+    },
+    "palpation": "Mild tenderness posterior-lateral calf, no palpable defect. Tenderness along sural nerve path. Tight hamstrings bilateral R > L."
+  },
+
+  "socraticQuestions": [
+    {
+      "id": "q1",
+      "phase": "assessment",
+      "question": "The patient's past medical history includes ankle sprain, episodic low back stiffness, and plantar fasciitis - all on the right side. How might these seemingly unrelated conditions be connected through a neurocentric lens?",
+      "hints": [
+        "What is the innervation of the ankle evertors?",
+        "What happens to motor control with nerve root irritation?",
+        "How might the plantar fasciitis connect?"
+      ],
+      "expectedConcepts": [
+        "Ankle evertors (peroneals) are innervated by L5-S1 via superficial peroneal nerve",
+        "Episodic low back stiffness suggests intermittent lumbar dysfunction",
+        "If L5-S1 nerve roots are intermittently irritated, motor control to ankle evertors may be compromised",
+        "Compromised eversion strength predisposes to inversion ankle sprain",
+        "Plantar fasciitis: medial plantar nerve passes under medial calcaneal tubercle - same L5-S1 origin",
+        "The pattern suggests episodic low back dysfunction → intermittent neural sensitivity → downstream motor/sensory manifestations",
+        "All conditions share common neural origin in lumbosacral spine"
+      ],
+      "teachingPoint": "Seemingly unrelated injuries on the same side often share a common neural origin. The history of ipsilateral ankle sprain, LBP, and plantar fasciitis suggests recurrent lumbosacral dysfunction affecting the sciatic tract over years."
+    },
+    {
+      "id": "q2",
+      "phase": "assessment",
+      "question": "Describe the neural tracing principle and how you applied it in this patient. Where did sensitivity 'run out' and what does this tell you about where to start treatment?",
+      "hints": [
+        "Where did you start tracing?",
+        "Where did sensitivity end?",
+        "What is the clinical significance of this finding?"
+      ],
+      "expectedConcepts": [
+        "Neural tracing: once sensitive neurology is found, trace the tract upstream until sensitivity ends",
+        "Started at lateral calf (symptom location) - hyperalgesic",
+        "Traced proximally: lateral calf → popliteal fossa → posterior thigh → gluteal",
+        "Sensitivity 'ran out' at gluteal region - normal skin rolling there",
+        "This tells us: the input point is likely at popliteal/posterior thigh level, NOT at the spine",
+        "Treatment implication: inputs (neurodynamics, DTM) should begin at the proximal extent of sensitivity",
+        "This is different from a radicular presentation where sensitivity would extend to the spine",
+        "The 40% improvement with McKenzie suggests some contribution from spine, but the greater response to tensioners and DTM at popliteal level indicates that's the primary driver"
+      ],
+      "teachingPoint": "Tracing upstream until sensitivity ends identifies where to focus treatment. In this patient, sensitivity stopped at the posterior thigh/popliteal region - that's where the primary interface dysfunction is, not the spine. This explains why rest and calf stretching failed - they weren't addressing the actual problem location."
+    },
+    {
+      "id": "q3",
+      "phase": "conceptualization",
+      "question": "The patient was diagnosed with a 'calf strain' and told to rest and stretch. Why did this approach fail? What is actually happening in the calf?",
+      "hints": [
+        "What does 'muscles protect nerves' mean here?",
+        "Why would stretching potentially make this worse?",
+        "What is the body trying to accomplish with the tight calf?"
+      ],
+      "expectedConcepts": [
+        "Calf 'strain' diagnosis assumes mesodermal (muscle) pathology",
+        "No palpable defect, Thompson negative - likely not true muscle strain",
+        "The calf tightness is the gastrocnemius/soleus protecting the sural nerve (and sciatic tract)",
+        "Stretching increases tension on already sensitized neural tissue - counterproductive",
+        "Rest removes the repetitive loading but doesn't address the neural interface dysfunction",
+        "When he returned to running, the nerve was still sensitized so symptoms returned immediately",
+        "The body tightens muscles to limit neural excursion and protect the nerve - this is adaptive",
+        "Forcing stretch on protective tightness increases neural threat and may worsen sensitivity"
+      ],
+      "teachingPoint": "Aggressively stretching 'tight' muscles that are protecting sensitized nerves increases neural threat and perpetuates the problem. The tight calf isn't the problem - it's the solution the body has created. Address the neural sensitivity first, then muscle tension will resolve."
+    },
+    {
+      "id": "q4",
+      "phase": "treatment",
+      "question": "Review the intervention responses: McKenzie gave 40% improvement, sciatic tensioners gave 50%, and DTM to popliteal region brought pain to 1/10. What does this sequence tell you about the relative contribution of each level?",
+      "hints": [
+        "What does each intervention target?",
+        "Why did DTM have the greatest effect?",
+        "How does this inform your treatment plan?"
+      ],
+      "expectedConcepts": [
+        "McKenzie (40% improvement): addresses nerve root/IVF level - some contribution from spine",
+        "Sciatic tensioners (50% improvement): addresses peripheral nerve tract mobility - significant contribution",
+        "DTM to popliteal (to 1/10): addresses cutaneous nerve at interface point - greatest contribution",
+        "The sequence reveals: cutaneous/interface problem > peripheral nerve tract > spinal contribution",
+        "Treatment priority should match: primary focus on popliteal interface (DTM), secondary on nerve tract mobility (neurodynamics), tertiary on spine (McKenzie)",
+        "The CAP provided objective data to determine treatment priorities",
+        "Note: multiple levels contributed - comprehensive treatment addresses all, but proportionally"
+      ],
+      "teachingPoint": "The CAP results guide treatment prioritization. When DTM to the popliteal region produced the greatest improvement, this identifies the primary driver. A good treatment plan addresses all contributing levels but prioritizes based on CAP response."
+    },
+    {
+      "id": "q5",
+      "phase": "treatment",
+      "question": "This patient has been doing daily hamstring stretching. Based on your findings, should he continue? What would you recommend instead?",
+      "hints": [
+        "Is hamstring 'tightness' muscular or neural?",
+        "What does stretching do to sensitized neural tissue?",
+        "What alternatives exist?"
+      ],
+      "expectedConcepts": [
+        "Hamstring 'tightness' in this context is likely protective of sciatic tract - not true muscle shortness",
+        "Traditional hamstring stretching places tension on the sciatic nerve",
+        "In a sensitized system, this can worsen symptoms and perpetuate the cycle",
+        "Stop static hamstring stretching immediately",
+        "Alternative: sciatic sliders (not tensioners initially) - move the nerve without sustained tension",
+        "Sliders: hip flexion with knee extension as foot dorsiflexes, then hip extension as knee flexes",
+        "This provides nerve mobility without sustained end-range tension",
+        "Progress to tensioners only after sensitivity has decreased",
+        "Also address: ergonomics (prolonged sitting compresses sciatic nerve in posterior thigh)"
+      ],
+      "teachingPoint": "Not all 'tightness' is muscular. Neural tension masquerades as muscle tightness. Stretching sensitized neural tissue is counterproductive. Use sliders to restore nerve mobility without creating sustained tension that increases threat."
+    },
+    {
+      "id": "q6",
+      "phase": "homeExercise",
+      "question": "Design a home program that will allow this patient to continue marathon training while addressing the underlying neural sensitivity. Include specific exercises, dosing, and return-to-running guidelines.",
+      "hints": [
+        "What daily exercises address each level?",
+        "How should running be modified?",
+        "What self-monitoring should he do?"
+      ],
+      "expectedConcepts": [
+        "Pre-run routine: 10 prone press-ups, 20 sciatic sliders, self-DTM to popliteal region 60 seconds",
+        "Post-run: Repeat sliders and DTM if any tightness noted",
+        "Daily (even non-running days): Sliders 2x20, DTM 2x daily",
+        "Avoid: Static hamstring stretching, aggressive foam rolling of calf/hamstring",
+        "Running modification: Reduce intensity initially (no speed work, hills), maintain easy mileage",
+        "Progress: If pre-run routine eliminates symptoms during run, gradually reintroduce intensity",
+        "Self-monitoring: Rate calf symptoms 0-10 at mile 1, 3, and end. If worsening >2 points, cut run short and increase slider/DTM frequency",
+        "Ergonomics: Standing desk intervals, avoid prolonged hip flexion (compresses nerve)",
+        "Goal: Symptom-free easy running within 2 weeks, gradual return to full training over 4-6 weeks"
+      ],
+      "teachingPoint": "Return to sport doesn't require complete resolution before training. With proper neural preparation (pre-run routine), progressive loading can continue while healing occurs. This keeps the athlete engaged and demonstrates that movement is safe - addressing fear-avoidance."
+    }
+  ],
+
+  "keyTakeaways": [
+    "Trace neural tracts upstream until sensitivity ends - that's where inputs begin",
+    "Ipsilateral injury history often shares common neural origin",
+    "'Muscle tightness' may be neural protection - don't stretch sensitized neural tissue",
+    "CAP response reveals relative contribution of each level and guides treatment priority",
+    "Sliders restore nerve mobility without sustained tension - safer than stretching",
+    "Athletes can continue training with proper neural preparation and monitoring"
+  ],
+
+  "paceMetadata": {
+    "learningObjectives": [
+      "Apply neural tracing to identify the proximal extent of nerve sensitivity in a lower quarter presentation",
+      "Explain why 'muscles protect nerves' and how aggressive stretching of protective tightness is counterproductive",
+      "Use CAP results to determine the relative contribution of spinal, peripheral, and cutaneous levels",
+      "Differentiate neural tension from true muscle shortness in athletic populations",
+      "Design a return-to-sport program incorporating neural preparation and self-monitoring"
+    ],
+    "creditHours": 1.0,
+    "estimatedMinutes": 50,
+    "creditHourJustification": "Case includes 6 Socratic questions spanning assessment, conceptualization, treatment, and home exercise with sport-specific return-to-running programming.",
+    "targetAudience": "Licensed chiropractors, physical therapists, osteopaths, and other neuromusculoskeletal clinicians",
+    "prerequisites": "Basic neuromusculoskeletal assessment skills; familiarity with lower extremity peripheral nerve anatomy",
+    "author": { "name": "Dr. Patrick Snell", "credentials": "DC" },
+    "conflictOfInterest": "Dr. Patrick Snell is the developer of the NeuroCentric Approach methodology and owner of Solutions Sports and Spine.",
+    "educationalMethods": ["case-based learning", "Socratic questioning", "self-assessment"],
+    "completionCriteria": {
+      "allQuestionsAnswered": true,
+      "selfAssessmentRequired": true,
+      "postActivityEvaluationRequired": true,
+      "minimumActiveMinutes": 50
+    }
+  },
+
+  "references": [
+    "Shacklock M. Clinical Neurodynamics",
+    "Butler D. Mobilisation of the Nervous System",
+    "NCA Theory Module 1 - Runner Case Study",
+    "Elvey R. Treatment of arm pain associated with abnormal brachial plexus tension"
+  ]
+}

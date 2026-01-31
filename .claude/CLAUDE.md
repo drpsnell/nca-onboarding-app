@@ -27,3 +27,7 @@ src/
 └── lib/           # Utilities
 prisma/            # Database schema
 ```
+
+## Reference Documents
+
+- **PACE Policy & Procedure Manual** — `docs/PACE-Policy-Procedure-Manual.txt` (OCR'd text, 102 pages, from original PDF)
