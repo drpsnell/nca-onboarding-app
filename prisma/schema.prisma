@@ -63,15 +63,35 @@ model CaseAttempt {
   attemptNumber         Int             @default(1)
   ceEligible            Boolean         @default(false)
   disclaimerAcceptedAt  DateTime?
+  phaseTimings          Json?           // Seconds per workflow phase
+  idleSeconds           Int             @default(0)
+  lastHeartbeatAt       DateTime?
 
-  user         User              @relation(fields: [userId], references: [id])
-  caseStudy    CaseStudy         @relation(fields: [caseStudyId], references: [id])
-  evaluation   CourseEvaluation?
-  ceCompletion CECompletion?
+  user             User              @relation(fields: [userId], references: [id])
+  caseStudy        CaseStudy         @relation(fields: [caseStudyId], references: [id])
+  evaluation       CourseEvaluation?
+  ceCompletion     CECompletion?
+  activityEvents   ActivityEvent[]
 
   @@index([userId])
   @@index([caseStudyId])
   @@index([completedAt])
+}
+
+model ActivityEvent {
+  id        String   @id @default(cuid())
+  attemptId String
+  eventType String   // heartbeat, question_answered, hint_viewed, answer_revealed,
+                     // phase_entered, phase_exited, tab_visible, tab_hidden,
+                     // idle_start, idle_end, section_changed
+  phase     String?
+  metadata  Json?
+  timestamp DateTime @default(now())
+
+  attempt CaseAttempt @relation(fields: [attemptId], references: [id])
+
+  @@index([attemptId])
+  @@index([timestamp])
 }
 
 model CourseEvaluation {

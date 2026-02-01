@@ -13,6 +13,7 @@
       "region": "lower_quarter",
       "difficulty": "easy",
       "primaryCondition": "Lumbar disc herniation with radiculopathy",
+      "synopsis": "Right-sided low back pain radiating to the posterior thigh, present for 3 weeks.",
       "keyConcepts": ["McKenzie", "directional_preference", "centralization", "GNE", "CAP", "patient_agency", "hip_hinge", "ADL_modification"]
     },
     {
@@ -23,6 +24,7 @@
       "region": "upper_quarter",
       "difficulty": "intermediate",
       "primaryCondition": "Cervical radiculitis with brachial plexopathy",
+      "synopsis": "Right shoulder and arm pain for 4 months, worsening over past 6 weeks.",
       "keyConcepts": ["ULNTT", "cervical_distraction", "DTM", "failed_prior_treatment", "double_crush"]
     },
     {
@@ -33,6 +35,7 @@
       "region": "lower_quarter",
       "difficulty": "advanced",
       "primaryCondition": "Cluneal neuralgia / Maigne syndrome secondary to disc injury",
+      "synopsis": "Bilateral buttock and flank pain persisting despite 'successful' disc treatment 8 months ago.",
       "keyConcepts": ["cluneal_nerves", "post_disc_sequela", "skin_rolling", "fascial_entrapment", "DTM"]
     },
     {
@@ -43,6 +46,7 @@
       "region": "lower_quarter",
       "difficulty": "intermediate",
       "primaryCondition": "Sural nerve mechanical sensitivity",
+      "synopsis": "Right calf pain with running for 6 weeks, diagnosed as calf strain.",
       "keyConcepts": ["neural_tracing", "sciatic_tract", "sliders_vs_tensioners", "muscles_protect_nerves", "return_to_sport"]
     },
     {
@@ -53,6 +57,7 @@
       "region": "upper_quarter",
       "difficulty": "intermediate",
       "primaryCondition": "Radial nerve double crush - cervical to PIN",
+      "synopsis": "Right lateral elbow and forearm pain for 3 months, diagnosed as tennis elbow.",
       "keyConcepts": ["radial_tunnel", "double_crush", "neural_tracing", "lateral_elbow_pain", "ergonomics"]
     }
   ],

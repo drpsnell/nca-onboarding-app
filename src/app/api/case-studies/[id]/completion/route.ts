@@ -132,10 +132,14 @@ export async function POST(
       },
     });
 
-    // Mark attempt as completed
+    // Mark attempt as completed, include phase timings for audit trail
     await prisma.caseAttempt.update({
       where: { id: attemptId },
-      data: { status: "COMPLETED", completedAt: new Date() },
+      data: {
+        status: "COMPLETED",
+        completedAt: new Date(),
+        durationSec: attempt.activeSeconds,
+      },
     });
 
     return NextResponse.json(ceCompletion, { status: 201 });

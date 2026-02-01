@@ -6,6 +6,21 @@ export type CaseIndex = {
   primaryCondition: string;
   keyConcepts: string[];
   status: string;
+  synopsis?: string;
+  creditHours?: number;
+  estimatedMinutes?: number;
+  questionCount?: number;
+};
+
+export type UserCaseProgress = {
+  status: "not_started" | "in_progress" | "completed" | "ce_earned";
+  activeSeconds: number;
+  attemptCount: number;
+};
+
+export type CaseListResponse = {
+  cases: CaseIndex[];
+  progress?: Record<string, UserCaseProgress>;
 };
 
 export type SocraticQuestion = {

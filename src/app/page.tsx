@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { useSpeechToText } from "@/components/useSpeechToText";
 import VoicePanel from "@/components/VoicePanel";
 import Link from "next/link";
@@ -29,7 +30,21 @@ type Reading = {
 };
 
 export default function Home() {
-  const [active, setActive] = useState<TabKey>("learn");
+  return (
+    <Suspense fallback={<div className="min-h-screen p-6 sm:p-10 font-sans text-base"><div className="max-w-5xl mx-auto text-center py-8 text-black/60 dark:text-white/60">Loading...</div></div>}>
+      <HomeContent />
+    </Suspense>
+  );
+}
+
+function HomeContent() {
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab") as TabKey | null;
+  const categoryParam = searchParams.get("category");
+
+  const [active, setActive] = useState<TabKey>(
+    tabParam && ["learn", "test", "assist"].includes(tabParam) ? tabParam : "learn"
+  );
 
   return (
     <div className="min-h-screen p-6 sm:p-10 font-sans text-base">
@@ -63,7 +78,7 @@ export default function Home() {
       </header>
 
       <main className="max-w-5xl mx-auto bg-black/5 dark:bg-white/5 rounded-2xl p-4 sm:p-6">
-        {active === "learn" && <LearnTab />}
+        {active === "learn" && <LearnTab initialCategory={categoryParam} />}
         {active === "test" && <TestTab />}
         {active === "assist" && <AssistTab />}
       </main>
@@ -71,11 +86,15 @@ export default function Home() {
   );
 }
 
-function LearnTab() {
+function LearnTab({ initialCategory }: { initialCategory?: string | null }) {
   const [modules, setModules] = useState<Module[]>([]);
   const [selectedModule, setSelectedModule] = useState<Module | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeCategory, setActiveCategory] = useState<string>("DTM");
+
+  const validCategories = ["DTM", "FYOB", "FOUNDATIONS"];
+  const [activeCategory, setActiveCategory] = useState<string>(
+    initialCategory && validCategories.includes(initialCategory) ? initialCategory : "DTM"
+  );
 
   useEffect(() => {
     fetch("/api/modules")
