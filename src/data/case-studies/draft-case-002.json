@@ -4,7 +4,7 @@
   "title": "The Remote Worker",
   "difficulty": "intermediate",
   "region": "upper_quarter",
-  "primaryConcepts": ["cervical_radiculitis", "brachial_plexus", "cutaneous_nerves", "DTM", "clinical_audit_process"],
+  "primaryConcepts": ["cervical_radiculitis", "brachial_plexus", "Wainner_cluster", "ULNTT", "DTM_shoulder", "failed_prior_treatment", "multi_level_nerve_sensitivity", "CAP", "ergonomics"],
 
   "presentation": {
     "demographics": {
@@ -13,7 +13,7 @@
       "occupation": "Marketing Director"
     },
     "chiefComplaint": "Right shoulder and arm pain for 4 months, worsening over past 6 weeks.",
-    "hpiNarrative": "Ms. Garcia is a 51-year-old marketing director who presents with right shoulder and lateral arm pain that has been present for approximately 4 months but has significantly worsened over the past 6 weeks. The pain began insidiously with neck stiffness that she initially managed with weekly massage therapy. Since transitioning to full-time remote work 6 months ago, she has been working longer hours (50-60 hours/week) on a laptop at her kitchen table without proper ergonomic setup. She describes the pain as a deep ache in the posterior shoulder that radiates to the lateral arm, occasionally reaching the dorsum of her forearm. The pain is worse with overhead activities, reaching behind her back, and prolonged computer work. She notes the pain sometimes wakes her at night when she rolls onto her right side. She denies numbness or tingling but reports the arm occasionally feels 'heavy.' She previously received a diagnosis of rotator cuff impingement from her PCP and completed 6 weeks of physical therapy focusing on rotator cuff strengthening and stretching with minimal improvement. She was also previously diagnosed with carpal tunnel syndrome 3 years ago, treated conservatively.",
+    "hpiNarrative": "Ms. Garcia is a 51-year-old marketing director who presents with right shoulder and lateral arm pain that has been present for approximately 4 months but has significantly worsened over the past 6 weeks. The pain began insidiously with neck stiffness that she initially managed with weekly massage therapy. Since transitioning to full-time remote work 6 months ago, she has been working longer hours (50-60 hours/week) on a laptop at her kitchen table without proper ergonomic setup. She describes the pain as a deep ache in the posterior shoulder that radiates to the lateral arm, occasionally reaching the dorsum of her forearm. The pain is worse with overhead activities, reaching behind her back, and prolonged computer work. She notes the pain sometimes wakes her at night when she rolls onto her right side. She denies numbness or tingling but reports the arm occasionally feels 'heavy.' She previously received a diagnosis of rotator cuff impingement from her PCP and completed 6 weeks of physical therapy focusing on rotator cuff strengthening and stretching with minimal improvement. She was also previously diagnosed with carpal tunnel syndrome 3 years ago, treated conservatively with splinting.",
     "pastMedicalHistory": [
       "Carpal tunnel syndrome - right, diagnosed 3 years ago, managed with splinting",
       "Prior neck stiffness episodes - managed with massage",
@@ -34,13 +34,13 @@
   },
 
   "physicalExam": {
-    "observation": "Sits with forward head posture and rounded shoulders. Right shoulder slightly elevated. Holds right arm close to body. Frequent position changes during interview.",
+    "observation": "Sits with forward head posture and rounded shoulders. Right shoulder elevated compared to left. Holds right arm close to body. Frequent position changes during interview.",
     "cervicalROM": {
       "flexion": "Full, mild end-range discomfort",
-      "extension": "Limited to 60% with local neck pain",
-      "rightRotation": "Limited to 70% with right neck/shoulder pain",
+      "extension": "Limited to approximately 60% with local neck pain",
+      "rightRotation": "Limited to approximately 70% with right neck and shoulder pain",
       "leftRotation": "Full range",
-      "rightLateralFlexion": "Limited to 60%",
+      "rightLateralFlexion": "Limited to approximately 60%",
       "leftLateralFlexion": "Full range"
     },
     "shoulderROM": {
@@ -65,30 +65,46 @@
       }
     },
     "specialTests": {
-      "spurlings": "Negative for radicular symptoms, positive for local neck pain",
-      "cervicalDistraction": "Positive - shoulder abduction improved and less painful with manual cervical traction",
-      "ULNTT_median": "Negative",
-      "ULNTT_radial": "Negative",
-      "ULNTT_ulnar": "Positive right - reproduces shoulder pain, worsened with contralateral cervical lateral flexion",
-      "hawkinsKennedy": "Positive right",
-      "neer": "Positive right",
-      "emptyCanYocum": "Negative",
-      "resisted_IR": "Negative"
+      "wainnerCluster": {
+        "cervicalROM": "Asymmetric limitation as noted above - right rotation, right lateral flexion, and extension all limited with right-sided symptoms",
+        "spurlings": "Positive for local neck pain, negative for radicular arm symptoms",
+        "cervicalDistraction": {
+          "procedure": "Seated. Index movement (shoulder abduction) established at 100 degrees = 6/10 pain. Manual cervical traction applied while patient performs shoulder abduction.",
+          "result": "Pain reduced from 6/10 to 2/10. Patient achieves abduction to 140 degrees before pain onset.",
+          "interpretation": "Implicates the IVF as a contributor to shoulder symptoms"
+        },
+        "ULNTT_1_median": "Positive right - reproduces deep shoulder ache at full excursion. Adding contralateral cervical lateral flexion increases symptoms, demonstrating convergence (Shacklock) — tension applied from the cervical end of the neural tract meets the tension applied through the upper limb positioning, confirming the cervical spine as a proximal contributor.",
+        "clusterInterpretation": "3 of 4 positive (ROM, distraction, ULNTT #1). Per Wainner, 3/4 positive yields approximately 94% specificity for cervical radiculopathy."
+      },
+      "ULNTT_radial": "Positive right - reproduces lateral arm discomfort. Releasing wrist flexion reduces symptoms.",
+      "ULNTT_ulnar": "Negative",
+      "hawkinsKennedyTest": "Positive right",
+      "neersTest": "Positive right",
+      "emptyCan": "Negative",
+      "resistedIR": "Negative"
     },
     "ncaSpecificFindings": {
       "skinRolling": {
-        "posteriorShoulder": "Marked hyperalgesia right posterior deltoid region",
-        "axillaryRegion": "Hyperalgesia along distribution of axillary nerve",
-        "cervicalParaspinals": "Mild hyperalgesia C5-7 right"
+        "posteriorShoulder": "Over the quadrangular space: dense, non-pliable tissue with marked hyperalgesia",
+        "supraclavicularRegion": "From behind the mid-belly of the SCM across the clavicle: matted down superficial fascia with tenderness bilaterally, worse on the right",
+        "supraspinousFossa": "Near the distal spine of the scapula: tissue density with tenderness on the right",
+        "cervicalParaspinals": "C5-7 right: mild hyperalgesia, tissue does not lift freely compared to left"
       },
-      "mckenzieResponse": {
-        "cervicalRetractions": "Increased shoulder pain after 10 reps",
-        "cervicalRetractionsWithExtension": "No change",
-        "cervicalRetractionsWithExtensionAndRightRotation": "Decreased shoulder pain after 10 reps, improved abduction ROM"
+      "directionalPreferenceTesting": {
+        "note": "Each direction tested with a minimum of 10 reps of end-range loading to determine the symptom trend, per MDT protocol.",
+        "cervicalRetractions": "Shoulder pain increased after 10 reps",
+        "cervicalRetractionsWithExtension": "No significant change in shoulder symptoms",
+        "cervicalRetractionsWithExtensionAndRightRotation": "Shoulder pain decreased after 10 reps. Shoulder abduction ROM improved."
       },
-      "tractionTest": "With examiner providing manual cervical traction, patient performs shoulder abduction - pain reduced from 6/10 to 2/10",
-      "indexMovement": "Shoulder abduction - pain 6/10 at 100 degrees",
-      "postDTMResponse": "After DTM to posterior shoulder/axillary region, shoulder abduction pain reduced to 3/10"
+      "indexMovement": "Shoulder abduction - 6/10 pain at 100 degrees",
+      "capDemonstration": {
+        "baseline": "Shoulder abduction 6/10 pain at 100 degrees",
+        "intervention1": "Seated manual cervical traction during abduction",
+        "retest1": "Abduction pain reduced to 2/10, range improved to 140 degrees",
+        "intervention2": "DTM to posterior shoulder over quadrangular space",
+        "retest2": "Abduction pain reduced to 3/10 at 100 degrees without traction",
+        "clinicalNote": "Both cervical traction and DTM independently improved the index movement, indicating multi-level neurological involvement. The IVF level and cutaneous level both contribute."
+      }
     },
     "palpation": "Tenderness right upper trapezius, levator scapulae, infraspinatus. Nodular thickening posterior shoulder. Cervical paraspinal hypertonicity C4-7 right."
   },
@@ -97,140 +113,166 @@
     {
       "id": "q1",
       "phase": "assessment",
-      "question": "This patient was previously diagnosed with rotator cuff impingement and treated accordingly without improvement. Using the GNE framework, how would you organize your assessment findings? What does each level reveal?",
+      "question": "This patient was previously diagnosed with rotator cuff impingement and treated accordingly without improvement. Using the GNE framework, organize your assessment findings from bigger neuro to smaller neuro. What does each level reveal?",
       "hints": [
-        "What brain-level factors from history might contribute?",
-        "What does the positive cervical distraction test tell you about the nerve root level?",
-        "What does the ULNTT finding indicate about peripheral nerves?",
-        "What do the skin rolling findings suggest?"
+        "Start at the brain level - what psychosocial factors from the history might contribute?",
+        "What do the Wainner cluster findings tell you about the nerve root/IVF level?",
+        "What do the ULNTT findings indicate about peripheral nerves?",
+        "What did skin rolling reveal, and where specifically?"
       ],
       "expectedConcepts": [
-        "Brain: High stress, health anxiety from failed treatment, prior CTS diagnosis may create expectation of nerve problems",
-        "Cellular: Sedentary since stopped exercising, high work stress - inflammatory contributors",
-        "Spinal cord/nerve root/IVF: Positive distraction test suggests nerve root involvement - traction reduces compression/improves perfusion, symptoms improve with abduction",
-        "Peripheral nerves: Positive ULNTT for ulnar nerve with cervical modulation indicates peripheral nerve mechanical sensitivity along ulnar tract",
-        "Cutaneous: Hyperalgesia on skin rolling over posterior shoulder and axillary region indicates sensitized superficial neurology (likely axillary nerve distribution)"
+        "Brain: High work stress, health anxiety from failed treatment and prior CTS diagnosis, deconditioning from 8 months without exercise, catastrophizing risk given worsening symptoms despite treatment",
+        "Cellular: Sedentary since stopped exercising, high work stress, prolonged static postures - all systemic inflammatory contributors",
+        "Spinal cord/nerve root/IVF: Wainner cluster 3/4 positive. Cervical distraction reduced abduction pain from 6/10 to 2/10 - strongly implicates the IVF. ULNTT #1 positive, and adding contralateral cervical lateral flexion increases symptoms — this demonstrates convergence (Shacklock), where tension applied from the cervical end of the neural tract meets tension applied through the upper limb, confirming the cervical spine as a proximal contributor",
+        "Peripheral nerves: ULNTT radial positive reproducing lateral arm symptoms. ULNTT #1 (median) positive indicating brachial plexus involvement",
+        "Cutaneous: Skin rolling over the posterior shoulder near the quadrangular space revealed dense, non-pliable tissue with hyperalgesia. Skin rolling across the clavicle from behind the SCM showed matted down superficial fascia. These findings indicate sensitized superficial neurology"
       ],
-      "teachingPoint": "The GNE reveals multi-level involvement. The failed rotator cuff treatment makes sense - the primary driver is neurological (cervical and peripheral), not primarily mesodermal. The 'impingement' signs (Hawkins, Neer) may be positive because sensitized neurology is causing altered motor control and joint centration issues."
+      "teachingPoint": "The GNE reveals multi-level involvement that the prior diagnosis of rotator cuff impingement missed entirely. The failed rotator cuff treatment makes sense - the primary driver is neurological, not primarily mesodermal. Each GNE level adds a piece of the puzzle: the IVF is a major contributor (distraction test), the peripheral nerve tracts are sensitized (ULNTTs), and the cutaneous neurology is involved (skin rolling). A single-structure diagnosis cannot account for all of these findings."
     },
     {
       "id": "q2",
       "phase": "assessment",
-      "question": "Explain the significance of the positive cervical distraction test combined with the ULNTT findings. What is the mechanical relationship between these findings?",
+      "question": "Explain the significance of the cervical distraction response. When manual traction was applied and the patient performed shoulder abduction, pain dropped from 6/10 to 2/10. What does this tell you mechanically? How does this relate to the ULNTT findings?",
       "hints": [
         "What does traction do to the IVF?",
-        "How does nerve root irritation affect downstream peripheral neurology?",
-        "What is the concept of 'double crush'?"
+        "What happens to nerve root perfusion when the IVF opens?",
+        "If nerve roots are irritated upstream, what happens to the peripheral nerve tracts downstream?",
+        "Consider this patient's prior carpal tunnel diagnosis in light of these findings"
       ],
       "expectedConcepts": [
-        "Cervical distraction opens the IVF, reducing compression on nerve roots and improving perfusion",
-        "When traction improves distal symptoms (shoulder abduction), it suggests nerve root involvement as a proximal driver",
-        "The ulnar nerve originates from C8-T1; mechanical sensitivity at the root level can sensitize the entire peripheral nerve tract (double crush concept)",
-        "Upstream compression reduces axonal transport and perfusion, making the nerve more vulnerable to downstream compression points",
-        "This explains why she also had prior CTS - the entire neural tract from cervical spine to hand may be sensitized"
+        "Cervical traction opens the IVF, reducing mechanical compression on nerve roots and improving perfusion of the vasa nervorum",
+        "When traction dramatically improves the distal index movement (shoulder abduction 6/10 to 2/10), it strongly implicates the IVF/nerve root as a proximal driver of the shoulder symptoms",
+        "When neurology is mechanically sensitized upstream at the IVF, axonal transport and perfusion are reduced along the entire peripheral nerve tract, making those nerves more mechanically sensitive and prone to irritation at interface points between the nerve and other tissues",
+        "ULNTT #1 (median) positive. Adding contralateral cervical lateral flexion worsens symptoms — this is convergence (Shacklock), where tension from the cervical spine meets the tension already applied through the upper limb. This structural differentiation confirms the spinal level is involved.",
+        "ULNTT radial positive reproducing lateral arm symptoms indicates the radial nerve tract is sensitized",
+        "This patient's prior CTS diagnosis 3 years ago is consistent with a pattern of neural tract sensitivity - the median nerve was symptomatic then, and now the entire upper quarter neural system is involved"
       ],
-      "teachingPoint": "Elvey's concept that 'muscles protect nerves' and the double crush phenomenon explain how cervical involvement can manifest as shoulder and arm symptoms. The brachial plexus and its branches are one continuous tissue - irritation anywhere along the tract affects the whole system."
+      "teachingPoint": "When upstream irritation at the IVF reduces axonal transport and perfusion, the entire peripheral nerve tract becomes more mechanically sensitive and prone to irritation at interface points between the nerve and other tissues. The nerve is one continuous tissue from the nerve root to the fingertips. This explains why opening the IVF with traction has such a dramatic effect on shoulder symptoms - and it explains why this patient had carpal tunnel syndrome years before developing shoulder pain. The neural system was already sensitized; the poor ergonomic setup and deconditioning tipped it over."
     },
     {
       "id": "q3",
       "phase": "conceptualization",
-      "question": "The patient has positive Hawkins-Kennedy and Neer tests. How does the neurocentric approach explain these findings differently than a traditional rotator cuff impingement diagnosis?",
+      "question": "The patient has positive Hawkins-Kennedy and Neer's tests. Her prior physical therapist used these findings to justify a diagnosis of rotator cuff impingement. However, the empty can test and resisted internal rotation are both negative. How does the neurocentric approach explain these findings differently?",
       "hints": [
-        "What is the innervation of the shoulder capsule?",
-        "How might sensitized neurology affect muscle behavior?",
-        "What happens to joint centration when protective muscle guarding is present?"
+        "What do the negative rotator cuff strength tests tell you about the tendons?",
+        "What nerves innervate the shoulder capsule and the muscles around the glenohumeral joint?",
+        "How might sensitized neurology affect muscle behavior around the shoulder?",
+        "What happens to joint centration when muscles are guarding to protect nerves?"
       ],
       "expectedConcepts": [
-        "Traditional view: Positive impingement tests indicate mechanical compression of supraspinatus tendon under acromion",
-        "Neurocentric view: The nerves innervating the capsule (suprascapular, axillary) may be mechanically sensitive",
-        "Sensitized nerves cause protective muscle guarding which can decentrate the humeral head",
-        "Decentrated humeral head creates impingement-like mechanics secondarily",
-        "The negative resisted IR and empty can tests suggest the rotator cuff tendons themselves are not the primary issue",
-        "The skin rolling hyperalgesia over axillary nerve distribution supports primary neural involvement"
+        "Traditional mesodermal view: Positive Hawkins-Kennedy and Neer's indicate mechanical compression of supraspinatus tendon under the acromion",
+        "Problem: If the rotator cuff tendons were the primary issue, we would expect positive findings on resisted testing (empty can, resisted IR). Both are negative.",
+        "Neurocentric view: The nerves innervating the shoulder capsule and surrounding muscles may be mechanically sensitive. When those nerves are unhappy, the muscles they innervate become protective - they guard.",
+        "Muscles protect nerves (Elvey). Protective guarding of the shoulder muscles alters the normal centration of the humeral head in the glenoid.",
+        "A decentrated humeral head creates impingement-like mechanics secondarily - the acromion compresses structures not because the tendons are pathological, but because the joint is not centrating properly due to neural-driven muscle guarding",
+        "The skin rolling hyperalgesia over the posterior shoulder supports primary neural involvement at the cutaneous level, not tendon pathology"
       ],
-      "teachingPoint": "Impingement tests can be positive for neurological reasons. Sensitized neurology alters motor programs and muscle recruitment, leading to joint decentration. This creates secondary mechanical impingement. Treating the impingement without addressing the neural driver will fail - as it did in this patient's prior PT."
+      "teachingPoint": "Hawkins-Kennedy and Neer's tests can be positive for neurological reasons. Sensitized neurology alters motor programs and muscle recruitment, leading to joint decentration that creates secondary mechanical impingement. Treating the impingement without addressing the neural driver will fail - as it did in this patient's 6 weeks of rotator cuff-focused PT. The negative rotator cuff strength tests are the key finding that should prompt the clinician to look beyond the mesodermal lens."
     },
     {
       "id": "q4",
       "phase": "treatment",
-      "question": "Demonstrate the Clinical Audit Process (CAP) for this patient. Show how you would sequence interventions and use the index movement to validate effectiveness.",
+      "question": "Demonstrate the Clinical Audit Process (CAP) for this patient. How do you sequence interventions from bigger to smaller neuro, and how do you use the index movement to validate each step?",
       "hints": [
-        "What is the index movement?",
-        "What did each intervention level do to the index movement?",
-        "How do you sequence from bigger to smaller neuro?"
+        "What is the index movement and its baseline?",
+        "Start with the biggest neuro - what did cervical traction do?",
+        "What did directional preference testing show?",
+        "What did DTM do to the index movement?"
       ],
       "expectedConcepts": [
-        "Index movement: Shoulder abduction - 6/10 pain at 100 degrees",
-        "Level 1 - Nerve root (biggest): Cervical retractions with extension and right rotation → Retest abduction → Document change",
-        "Level 2 - Peripheral: If ulnar neurodynamics indicated, perform sliders → Retest → Document",
-        "Level 3 - Cutaneous: DTM to posterior shoulder/axillary region → Retest → Post-DTM abduction pain 3/10 (50% improvement)",
-        "The CAP showed: Manual cervical traction → improved abduction; DTM → further improved abduction",
-        "This validates that multiple neurological levels are contributing and both need to be addressed"
+        "Index movement: Shoulder abduction - 6/10 pain at 100 degrees. This is the benchmark for all retesting.",
+        "Level 1 - IVF/nerve root (biggest neuro): Seated manual cervical traction while patient abducts → pain drops to 2/10, range improves to 140 degrees. The IVF is strongly implicated.",
+        "Directional preference: Retractions alone worsened symptoms. Retractions with extension - no change. Retractions with extension AND right rotation improved symptoms. This is the directional preference for home exercise.",
+        "Level 2 - Peripheral nerves: ULNTT radial and median were positive. Neurodynamic sliders could be applied and the index retested.",
+        "Level 3 - Cutaneous (smallest neuro): DTM to the posterior shoulder over the quadrangular space → retest abduction → pain drops to 3/10 at baseline range. Cutaneous neurology is contributing.",
+        "The CAP showed that BOTH the IVF level and the cutaneous level independently improved the index movement. This confirms multi-level neurological involvement and tells us both levels need to be addressed in treatment."
       ],
-      "teachingPoint": "The CAP provides immediate, objective feedback. When shoulder abduction improved from 6/10 to 2/10 with cervical traction and to 3/10 after DTM, we have validated our neurocentric hypothesis. This builds patient confidence and rapport while guiding treatment planning."
+      "teachingPoint": "The CAP provides immediate, objective feedback at each neurological level. When shoulder abduction improved from 6/10 to 2/10 with cervical traction and independently to 3/10 after DTM, we have validated our neurocentric hypothesis at two levels. The patient sees the cause-and-effect - this builds confidence and rapport while guiding the treatment plan. If the impingement were truly structural, neither cervical traction nor DTM to the skin would change shoulder abduction."
     },
     {
       "id": "q5",
       "phase": "diagnosis",
-      "question": "Formulate a working diagnosis using neurocentric terminology. How does this differ from the prior diagnosis of 'rotator cuff impingement'?",
+      "question": "Formulate a working diagnosis using neurocentric terminology. How would you communicate this to the patient in language she can understand, especially given her frustration with the prior failed treatment?",
       "hints": [
-        "What structures are primarily involved?",
+        "What structures are primarily involved based on the GNE and CAP?",
         "Is this primarily ectodermal or mesodermal?",
-        "How would you communicate this to the patient?"
+        "How do you reframe the failed rotator cuff treatment in a way that validates her experience?",
+        "What does this diagnosis mean for her prognosis?"
       ],
       "expectedConcepts": [
-        "Working diagnosis: Cervical radiculitis with secondary brachial plexopathy and axillary nerve mechanical sensitivity",
-        "Alternative framing: Upper quarter neural tension syndrome with cervical driver",
+        "Working diagnosis: Cervical radiculitis with secondary upper quarter neural tract sensitivity and cutaneous nerve involvement at the shoulder",
         "This is primarily an ectodermal (neurological) condition, not mesodermal (structural shoulder)",
-        "The 'impingement' is secondary to neural-driven motor control dysfunction",
-        "Patient communication: 'The nerves from your neck that go to your shoulder have become irritated, probably from your work posture. This is causing your shoulder muscles to tighten up to protect those nerves, which makes your shoulder not move properly. We need to calm down the nerve irritation first.'",
-        "Prognosis: Much better than true rotator cuff pathology - likely significant improvement in days to weeks vs months"
+        "The impingement findings are secondary to neural-driven motor control dysfunction - a combo platter where the neuro is driving the mechanical problem",
+        "Patient communication: 'The nerves from your neck that go to your shoulder and arm have become irritated, likely from working at your kitchen table for long hours. This irritation is causing your shoulder muscles to tighten up to protect those nerves, which makes your shoulder not move properly. The good news is that when we created space in your neck with traction, your shoulder immediately felt better - that tells us the nerves are the main issue, not a torn rotator cuff. The previous treatment focused on the wrong thing.'",
+        "Reframing the prior failed treatment: It was not the wrong effort - it was aimed at the wrong target. The rotator cuff was never the primary problem.",
+        "Prognosis: Significantly better than true rotator cuff pathology. Major improvement expected in days to weeks with appropriate neural-focused intervention, not months."
       ],
-      "teachingPoint": "Reframing the diagnosis changes the treatment approach and prognosis. A neurocentric diagnosis of cervical radiculitis with peripheral neural sensitization explains the failed prior treatment and predicts rapid improvement with appropriate neural-focused intervention."
+      "teachingPoint": "Reframing the diagnosis changes everything - treatment approach, prognosis, and the patient's understanding of their own body. Telling Ms. Garcia that her nerves are irritated and that's why her shoulder isn't working properly validates her experience of failed treatment while giving her hope. The within-visit CAP demonstration already showed her that cervical traction and DTM improved her shoulder - she has evidence that this explanation is correct."
     },
     {
       "id": "q6",
       "phase": "homeExercise",
-      "question": "Design a home exercise program for this patient. Include self-treatment techniques, ergonomic modifications, and clear dosing instructions.",
+      "question": "Design a home exercise program for this patient. Include directional preference exercises, self-DTM techniques, ergonomic modifications, and clear dosing instructions.",
       "hints": [
-        "Based on McKenzie response, what cervical exercises?",
-        "Can the patient perform self-DTM?",
-        "What ergonomic changes are critical?",
-        "What should she avoid?"
+        "Based on directional preference testing, what specific cervical exercise improved her shoulder?",
+        "Can the patient perform self-DTM? Where and how?",
+        "What ergonomic changes are critical given her work setup?",
+        "What should she avoid, and what is the return-to-exercise progression?"
       ],
       "expectedConcepts": [
-        "Cervical exercises: Retractions with extension and right rotation, 10 reps every 2 hours",
-        "Self-DTM: Teach patient to perform skin traction over posterior shoulder using opposite hand, 30-60 seconds, 3-4x daily",
-        "Ergonomic modifications: Proper desk setup (monitor at eye level, external keyboard, chair with lumbar support), standing desk intervals",
-        "Movement breaks: Every 30-45 minutes, perform cervical retractions and shoulder rolls",
-        "Avoid: Prolonged static postures, sleeping on right side, heavy lifting overhead",
-        "Postural awareness: Chin tucks throughout day, avoid forward head posture",
-        "Graded return to exercise: Start with walking, gradually reintroduce gym with attention to posture"
+        "Directional preference exercise: Cervical retractions with extension and right rotation, 10 reps every 2 hours. This was the specific combination that improved shoulder symptoms.",
+        "Self-DTM: Teach patient to perform skin traction over posterior shoulder using opposite hand - lift and hold the tissue while gently moving the arm through a comfortable range of abduction. 30-60 seconds, 3-4 times daily. Also teach self-DTM across the supraclavicular region.",
+        "Ergonomic modifications (critical - this is the primary environmental driver): External monitor at eye level, external keyboard and mouse, chair with proper lumbar support at correct desk height. She cannot continue working on a laptop at a kitchen table.",
+        "Movement breaks: Every 30-45 minutes, perform cervical retractions and shoulder rolls. Stand and change position.",
+        "Avoid: Prolonged static postures, sleeping on right side (use pillow to prevent rolling), heavy overhead lifting until symptoms resolve",
+        "Return to exercise: Start with walking. Gradually reintroduce gym with attention to posture. Avoid loaded overhead pressing until pain-free abduction is restored."
       ],
-      "teachingPoint": "Home program addresses all contributing factors: neural mobilization (cervical exercises), cutaneous desensitization (self-DTM), and environmental modification (ergonomics). The patient must understand that the home exercises are the treatment - clinic visits reinforce and progress the program."
+      "teachingPoint": "The home program addresses all contributing factors: neural mobilization (directional preference exercises), cutaneous desensitization (self-DTM), and environmental modification (ergonomics). The ergonomic setup is not optional - it is the primary environmental driver of her condition. She must understand that the home exercises ARE the treatment. Clinic visits reinforce and progress the program, but the 50-60 hours per week at her workstation will determine the outcome."
+    },
+    {
+      "id": "q7",
+      "phase": "integration",
+      "question": "Ms. Garcia was diagnosed with carpal tunnel syndrome 3 years ago, and now presents with cervical radiculitis and shoulder symptoms. How does her history inform your understanding of the current presentation? If she returns in 3 weeks with improved shoulder symptoms but reports her old carpal tunnel tingling has returned, what does that tell you?",
+      "hints": [
+        "Think about the neural tract as one continuous tissue from nerve root to fingertips",
+        "If the nerve is sensitized upstream, what happens downstream?",
+        "What does the return of CTS symptoms suggest about the current treatment?",
+        "How would you modify the treatment plan?"
+      ],
+      "expectedConcepts": [
+        "The prior CTS and current cervical radiculitis with shoulder involvement are not separate diagnoses - they represent sensitivity along the same neural tract at different times and different levels",
+        "When neurology is mechanically sensitized upstream at the IVF, the entire peripheral nerve tract becomes more mechanically sensitive and prone to irritation at interface points between the nerve and other tissues — tunnels, fascial layers, and muscle bellies",
+        "Her CTS 3 years ago may have been an early signal that the cervical spine and brachial plexus area were already sensitized, making the median nerve prone to irritation at the carpal tunnel interface. The poor ergonomic setup escalated the upstream irritation until the shoulder became symptomatic.",
+        "If CTS tingling returns while shoulder improves: the cervical treatment is mobilizing the nerve root and trunk, which is changing the mechanical environment along the entire tract. The median nerve at the carpal tunnel may temporarily become more symptomatic as the system reorganizes.",
+        "This is NOT a setback - it is consistent with the multi-level model. Continue cervical directional preference exercises, add median nerve sliders if indicated, ensure the wrist splint is available for night use.",
+        "Long-term: once the cervical driver is resolved, the downstream mechanical sensitivity at the carpal tunnel should also resolve - if the nerve root has adequate perfusion and axonal transport, the peripheral nerve is more resilient at its interface points."
+      ],
+      "teachingPoint": "NCA teaches clinicians to think in terms of the entire neural tract, not isolated diagnoses. Ms. Garcia's 'carpal tunnel' and 'shoulder impingement' and 'neck stiffness' are chapters in the same story - progressive sensitization of the upper quarter neural system. Treating each in isolation (splint for wrist, rotator cuff exercises for shoulder, massage for neck) missed the unifying mechanism. The NCA framework connects these dots and provides a coherent treatment strategy that addresses the upstream driver."
     }
   ],
 
   "keyTakeaways": [
-    "Failed treatment may indicate wrong diagnosis - reassess through neurocentric lens",
-    "Positive impingement tests can have neurological etiology - sensitized nerves alter motor control",
-    "The GNE reveals multi-level involvement that single-structure diagnosis misses",
-    "Double crush: proximal neural irritation sensitizes entire peripheral nerve tract",
-    "CAP validates clinical reasoning with objective within-session changes",
-    "DTM addresses cutaneous nerve involvement not reached by traditional soft tissue work"
+    "Failed treatment should prompt reassessment through the neurocentric lens - the prior treatment may have been aimed at the wrong target",
+    "The Wainner cluster (cervical ROM, Spurling's, distraction, ULNTT #1) is the structured starting point for upper quarter assessment. 3/4 positive yields approximately 94% specificity for cervical radiculopathy.",
+    "Positive Hawkins-Kennedy and Neer's tests can have neurological etiology - sensitized nerves cause protective muscle guarding that decentrates the humeral head, creating secondary impingement",
+    "The GNE reveals multi-level involvement that single-structure diagnoses miss. Assess from bigger neuro to smaller neuro.",
+    "When neurology is sensitized upstream at the IVF, the entire peripheral nerve tract becomes more mechanically sensitive and prone to irritation at interface points between the nerve and other tissues. Prior diagnoses along the same neural tract (e.g., CTS) may be related.",
+    "The CAP validates clinical reasoning with objective within-session changes at each neurological level",
+    "DTM addresses cutaneous nerve involvement not reached by traditional soft tissue techniques",
+    "Ergonomic modification is not optional when the work environment is the primary driver"
   ],
 
   "paceMetadata": {
     "learningObjectives": [
-      "Apply the GNE framework to organize multi-level neurological findings in the upper quarter",
-      "Explain the double crush hypothesis and its clinical implications for brachial plexopathy",
-      "Differentiate neurocentric shoulder pathology from traditional rotator cuff impingement",
-      "Demonstrate the Clinical Audit Process (CAP) for sequencing upper quarter interventions",
+      "Apply the Wainner cluster and GNE framework to organize multi-level neurological findings in the upper quarter",
+      "Explain how upstream nerve root irritation makes the entire peripheral nerve tract more mechanically sensitive and prone to irritation at tissue interface points",
+      "Differentiate neurocentric shoulder pathology from traditional rotator cuff impingement using orthopedic test interpretation",
+      "Demonstrate the Clinical Audit Process (CAP) for sequencing upper quarter interventions from bigger to smaller neuro",
       "Design an ergonomic-informed home program addressing cervical, peripheral, and cutaneous nerve involvement"
     ],
     "creditHours": 1.0,
     "estimatedMinutes": 50,
-    "creditHourJustification": "Case includes 6 Socratic questions covering assessment, conceptualization, diagnosis, treatment, and home exercise phases with emphasis on failed prior treatment reframing.",
+    "creditHourJustification": "Case includes 7 Socratic questions covering assessment, conceptualization, diagnosis, treatment, home exercise, and integration phases with emphasis on failed prior treatment reframing and multi-level neural tract sensitivity.",
     "targetAudience": "Licensed chiropractors, physical therapists, osteopaths, and other neuromusculoskeletal clinicians",
     "prerequisites": "Basic neuromusculoskeletal assessment skills; familiarity with cervical spine and upper extremity anatomy",
     "author": { "name": "Dr. Patrick Snell", "credentials": "DC" },
@@ -245,10 +287,12 @@
   },
 
   "references": [
-    "Elvey RL. Treatment of arm pain associated with abnormal brachial plexus tension",
     "Shacklock M. Clinical Neurodynamics",
     "Butler D. The Sensitive Nervous System",
-    "Maitland G. Peripheral Manipulation",
-    "NCA Theory Module 1 - Upper Quarter Case Study"
+    "Elvey RL. Treatment of arm pain associated with abnormal brachial plexus tension",
+    "Wainner RS et al. Reliability and diagnostic accuracy of the clinical examination and patient self-report measures for cervical radiculopathy. Spine. 2003;28(1):52-62",
+    "NCA Shoulder Module - Overview, Assessment, Manual, Exercise",
+    "NCA DTM Chapter 2 - Shoulder",
+    "NCA Theory Module 1 - Introduction"
   ]
 }
