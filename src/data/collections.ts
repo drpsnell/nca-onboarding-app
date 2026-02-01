@@ -16,13 +16,6 @@ export const collections: CollectionDef[] = [
     gradient: "bg-gradient-to-br from-green-600 to-green-800",
   },
   {
-    title: "NCA Foundations",
-    subtitle: "Core Reading",
-    itemCount: 12,
-    href: "/?tab=learn&category=FOUNDATIONS",
-    gradient: "bg-gradient-to-br from-purple-600 to-purple-800",
-  },
-  {
     title: "Clinical Case Studies",
     subtitle: "Applied Learning",
     itemCount: 5,

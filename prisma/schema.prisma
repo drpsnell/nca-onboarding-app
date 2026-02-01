@@ -199,7 +199,6 @@ model Module {
   active      Boolean          @default(true)
   createdAt   DateTime         @default(now())
   progress    ModuleProgress[]
-  readings    Reading[]
 }
 
 model ModuleProgress {
@@ -219,25 +218,9 @@ model ModuleProgress {
   @@index([moduleId])
 }
 
-model Reading {
-  id       String  @id @default(cuid())
-  moduleId String
-  title    String
-  author   String?
-  type     String  // BOOK, ARTICLE, REFERENCE
-  filePath String?
-  url      String?
-  required Boolean @default(false)
-
-  module Module @relation(fields: [moduleId], references: [id])
-
-  @@index([moduleId])
-}
-
 enum ModuleCategory {
   DTM           // Dermal Traction Method
   FYOB          // FYOB Strength
-  FOUNDATIONS   // Foundational reading
   CASE_STUDY    // Clinical case studies
 }
 

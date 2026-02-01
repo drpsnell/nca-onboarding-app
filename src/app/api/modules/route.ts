@@ -6,9 +6,6 @@ export async function GET() {
     const modules = await prisma.module.findMany({
       where: { active: true },
       orderBy: [{ category: "asc" }, { order: "asc" }],
-      include: {
-        readings: true,
-      },
     });
 
     return NextResponse.json({ modules });

@@ -254,51 +254,7 @@ async function main() {
     });
   }
 
-  // Create Foundations module with readings
-  const foundationsModule = await prisma.module.upsert({
-    where: { slug: "foundations" },
-    create: {
-      slug: "foundations",
-      title: "NCA Foundations",
-      description: "Foundational texts and references for understanding the NeuroCentric Approach.",
-      category: ModuleCategory.FOUNDATIONS,
-      order: 0,
-      duration: 0, // Self-paced reading
-    },
-    update: {
-      title: "NCA Foundations",
-      description: "Foundational texts and references for understanding the NeuroCentric Approach.",
-    },
-  });
-
-  const readings = [
-    { title: "Clinical Neurodynamics", author: "Shacklock", type: "BOOK", required: true },
-    { title: "Explain Pain", author: "Butler & Moseley", type: "BOOK", required: true },
-    { title: "Back Mechanic", author: "McGill", type: "BOOK", required: false },
-    { title: "Ultimate Back Fitness", author: "McGill", type: "BOOK", required: false },
-    { title: "Kolar Clinical Rehabilitation", author: "Kolar", type: "BOOK", required: false },
-    { title: "Trail Guide to the Body", author: "Biel", type: "BOOK", required: false },
-    { title: "Manual Therapy for Peripheral Nerves", author: "Barral & Croibier", type: "BOOK", required: false },
-    { title: "Fascial Manipulation", author: "Stecco", type: "BOOK", required: false },
-    { title: "Textbook of Pain", author: "Wall & Melzack", type: "REFERENCE", required: false },
-    { title: "Tunnel Syndromes", author: "Pecina", type: "REFERENCE", required: false },
-    { title: "Vojta Principles", author: "Vojta", type: "BOOK", required: false },
-    { title: "Peripheral Nerve Interventions", author: "Trescot", type: "REFERENCE", required: false },
-  ];
-
-  for (const reading of readings) {
-    await prisma.reading.upsert({
-      where: { id: `reading-${reading.title.toLowerCase().replace(/\s+/g, "-")}` },
-      create: {
-        id: `reading-${reading.title.toLowerCase().replace(/\s+/g, "-")}`,
-        moduleId: foundationsModule.id,
-        ...reading,
-      },
-      update: reading,
-    });
-  }
-
-  console.log("Seeded NCA case studies, curriculum modules, and readings");
+  console.log("Seeded NCA case studies and curriculum modules");
 }
 
 main()

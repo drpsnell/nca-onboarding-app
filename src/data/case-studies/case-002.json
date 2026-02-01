@@ -1,6 +1,6 @@
 {
-  "id": "draft-002",
-  "status": "draft",
+  "id": "case-002",
+  "status": "approved",
   "title": "The Remote Worker",
   "difficulty": "intermediate",
   "region": "upper_quarter",
@@ -13,15 +13,15 @@
       "occupation": "Marketing Director"
     },
     "chiefComplaint": "Right shoulder and arm pain for 4 months, worsening over past 6 weeks.",
-    "hpiNarrative": "Ms. Garcia is a 51-year-old marketing director who presents with right shoulder and lateral arm pain that has been present for approximately 4 months but has significantly worsened over the past 6 weeks. The pain began insidiously with neck stiffness that she initially managed with weekly massage therapy. Since transitioning to full-time remote work 6 months ago, she has been working longer hours (50-60 hours/week) on a laptop at her kitchen table without proper ergonomic setup. She describes the pain as a deep ache in the posterior shoulder that radiates to the lateral arm, occasionally reaching the dorsum of her forearm. The pain is worse with overhead activities, reaching behind her back, and prolonged computer work. She notes the pain sometimes wakes her at night when she rolls onto her right side. She denies numbness or tingling but reports the arm occasionally feels 'heavy.' She previously received a diagnosis of rotator cuff impingement from her PCP and completed 6 weeks of physical therapy focusing on rotator cuff strengthening and stretching with minimal improvement. She was also previously diagnosed with carpal tunnel syndrome 3 years ago, treated conservatively with splinting.",
+    "hpiNarrative": "Ms. Garcia is a 51-year-old marketing director who presents with right shoulder and lateral arm pain that has been present for approximately 4 months but has significantly worsened over the past 6 weeks. The pain began insidiously with neck stiffness that she initially managed with weekly massage therapy. Since transitioning to full-time remote work 6 months ago, she has been working longer hours (50-60 hours/week) on a laptop at her kitchen table. She describes the pain as a deep ache in the posterior shoulder that radiates to the lateral arm, occasionally reaching the dorsum of her forearm. The pain is worse with overhead activities, reaching behind her back, and prolonged computer work. She notes the pain sometimes wakes her at night when she rolls onto her right side. She denies numbness or tingling but reports the arm occasionally feels 'heavy.' She previously received a diagnosis of rotator cuff impingement from her PCP and completed 6 weeks of physical therapy focusing on rotator cuff strengthening and stretching with minimal improvement. She was also previously diagnosed with carpal tunnel syndrome 3 years ago, treated conservatively with splinting.",
     "pastMedicalHistory": [
-      "Carpal tunnel syndrome - right, diagnosed 3 years ago, managed with splinting",
+      "Carpal tunnel syndrome - right, diagnosed 3 years ago. Treated with night splinting for approximately 6 months with symptom resolution. Discontinued splint approximately 2 years ago. No active wrist or hand symptoms currently.",
       "Prior neck stiffness episodes - managed with massage",
       "Hyperlipidemia",
       "No spine imaging"
     ],
     "socialHistory": {
-      "occupation": "Remote work, 50-60 hours/week at non-ergonomic home workstation",
+      "occupation": "Remote work, 50-60 hours/week at home workstation (kitchen table with laptop)",
       "exercise": "Previously attended gym 3x/week, stopped 8 months ago",
       "smoking": "Never",
       "alcohol": "1-2 glasses wine weekly",
@@ -66,22 +66,27 @@
     },
     "specialTests": {
       "wainnerCluster": {
-        "cervicalROM": "Asymmetric limitation as noted above - right rotation, right lateral flexion, and extension all limited with right-sided symptoms",
-        "spurlings": "Positive for local neck pain, negative for radicular arm symptoms",
+        "cervicalROM": "Asymmetric limitation - right rotation limited to approximately 70%, right lateral flexion limited to approximately 60%, extension limited to approximately 60%, all with right-sided neck and shoulder symptoms. Greater than 10 degrees asymmetry from side to side.",
+        "spurlings": "Right lateral tilt to affected side, rotation away, then extension: positive for local neck pain, negative for reproduction of radicular arm symptoms. With overpressure applied: no change.",
         "cervicalDistraction": {
           "procedure": "Seated. Index movement (shoulder abduction) established at 100 degrees = 6/10 pain. Manual cervical traction applied while patient performs shoulder abduction.",
           "result": "Pain reduced from 6/10 to 2/10. Patient achieves abduction to 140 degrees before pain onset.",
           "interpretation": "Implicates the IVF as a contributor to shoulder symptoms"
         },
-        "ULNTT_1_median": "Positive right - reproduces deep shoulder ache at full excursion. Adding contralateral cervical lateral flexion increases symptoms, demonstrating convergence (Shacklock) — tension applied from the cervical end of the neural tract meets the tension applied through the upper limb positioning, confirming the cervical spine as a proximal contributor.",
-        "clusterInterpretation": "3 of 4 positive (ROM, distraction, ULNTT #1). Per Wainner, 3/4 positive yields approximately 94% specificity for cervical radiculopathy."
+        "ULNTT_1_median": "Positive right. Shoulder blocked from elevation, arm abducted to 90-100 degrees, humerus externally rotated, wrist extended, elbow straightened — reproduces deep shoulder ache at full excursion. Adding contralateral cervical lateral flexion increases symptoms, demonstrating convergence (Shacklock) — tension applied from the cervical end of the neural tract meets the tension applied through the upper limb positioning, confirming the cervical spine as a proximal contributor. ULNTT #1 places the greatest tension on the brachial plexus region, which is why Wainner selected it for this cluster.",
+        "clusterInterpretation": "3 of 4 positive (ROM, distraction, ULNTT #1). Per Wainner (2003), 3/4 positive yields approximately 94% specificity for cervical radiculopathy. 4/4 positive would yield approximately 99% specificity."
+      },
+      "sapsCluster": {
+        "painfulArcAbduction": "Positive right - pain arc approximately 60-120 degrees on active abduction",
+        "yocumsTest": "Positive right - hand placed on opposite shoulder, raising elbow reproduces deep shoulder ache",
+        "activeInternalRotation": "Limited right - hand reaches L3 (left reaches T12). Discomfort at end range on right.",
+        "resistedInfraspinatus": "Negative - 5/5 strength, painless bilaterally",
+        "hawkinsKennedy": "Positive right - reproduces shoulder pain",
+        "neersTest": "Positive right - reproduces shoulder pain",
+        "clusterInterpretation": "Positive painful arc, Yocum's, Hawkins-Kennedy, and Neer's indicate subacromial compression. However, resisted infraspinatus is negative with full strength bilaterally. This pattern — positive compression tests with negative strength/resistance testing — is consistent with neurocentric-driven decentration rather than primary rotator cuff pathology."
       },
       "ULNTT_radial": "Positive right - reproduces lateral arm discomfort. Releasing wrist flexion reduces symptoms.",
-      "ULNTT_ulnar": "Negative",
-      "hawkinsKennedyTest": "Positive right",
-      "neersTest": "Positive right",
-      "emptyCan": "Negative",
-      "resistedIR": "Negative"
+      "ULNTT_ulnar": "Negative"
     },
     "ncaSpecificFindings": {
       "skinRolling": {
@@ -152,22 +157,22 @@
     {
       "id": "q3",
       "phase": "conceptualization",
-      "question": "The patient has positive Hawkins-Kennedy and Neer's tests. Her prior physical therapist used these findings to justify a diagnosis of rotator cuff impingement. However, the empty can test and resisted internal rotation are both negative. How does the neurocentric approach explain these findings differently?",
+      "question": "The SAPS cluster shows positive painful arc, Yocum's test, Hawkins-Kennedy, and Neer's — yet resisted infraspinatus is negative with full strength. Her prior physical therapist used similar impingement findings to justify a diagnosis of rotator cuff pathology. How does the neurocentric approach explain this pattern differently?",
       "hints": [
-        "What do the negative rotator cuff strength tests tell you about the tendons?",
+        "What does the negative resisted infraspinatus tell you about the rotator cuff tendons?",
         "What nerves innervate the shoulder capsule and the muscles around the glenohumeral joint?",
         "How might sensitized neurology affect muscle behavior around the shoulder?",
         "What happens to joint centration when muscles are guarding to protect nerves?"
       ],
       "expectedConcepts": [
-        "Traditional mesodermal view: Positive Hawkins-Kennedy and Neer's indicate mechanical compression of supraspinatus tendon under the acromion",
-        "Problem: If the rotator cuff tendons were the primary issue, we would expect positive findings on resisted testing (empty can, resisted IR). Both are negative.",
+        "Traditional mesodermal view: The SAPS cluster findings — positive painful arc, Yocum's, Hawkins-Kennedy, and Neer's — point to subacromial compression and rotator cuff pathology",
+        "Problem: If the rotator cuff tendons were the primary issue, we would expect positive findings on resisted testing. Resisted infraspinatus is negative with full strength bilaterally — the cuff is structurally intact.",
         "Neurocentric view: The nerves innervating the shoulder capsule and surrounding muscles may be mechanically sensitive. When those nerves are unhappy, the muscles they innervate become protective - they guard.",
         "Muscles protect nerves (Elvey). Protective guarding of the shoulder muscles alters the normal centration of the humeral head in the glenoid.",
         "A decentrated humeral head creates impingement-like mechanics secondarily - the acromion compresses structures not because the tendons are pathological, but because the joint is not centrating properly due to neural-driven muscle guarding",
         "The skin rolling hyperalgesia over the posterior shoulder supports primary neural involvement at the cutaneous level, not tendon pathology"
       ],
-      "teachingPoint": "Hawkins-Kennedy and Neer's tests can be positive for neurological reasons. Sensitized neurology alters motor programs and muscle recruitment, leading to joint decentration that creates secondary mechanical impingement. Treating the impingement without addressing the neural driver will fail - as it did in this patient's 6 weeks of rotator cuff-focused PT. The negative rotator cuff strength tests are the key finding that should prompt the clinician to look beyond the mesodermal lens."
+      "teachingPoint": "The SAPS cluster can be positive for neurological reasons. Sensitized neurology alters motor programs and muscle recruitment, leading to joint decentration that creates secondary mechanical impingement. Treating the impingement without addressing the neural driver will fail - as it did in this patient's 6 weeks of rotator cuff-focused PT. The negative resisted infraspinatus is the key finding that should prompt the clinician to look beyond the mesodermal lens — the compression tests are positive because the joint is decentrated, not because the tendons are pathological."
     },
     {
       "id": "q4",
@@ -254,7 +259,7 @@
   "keyTakeaways": [
     "Failed treatment should prompt reassessment through the neurocentric lens - the prior treatment may have been aimed at the wrong target",
     "The Wainner cluster (cervical ROM, Spurling's, distraction, ULNTT #1) is the structured starting point for upper quarter assessment. 3/4 positive yields approximately 94% specificity for cervical radiculopathy.",
-    "Positive Hawkins-Kennedy and Neer's tests can have neurological etiology - sensitized nerves cause protective muscle guarding that decentrates the humeral head, creating secondary impingement",
+    "SAPS cluster tests (painful arc, Yocum's, Hawkins-Kennedy, Neer's) can be positive for neurological reasons — sensitized nerves cause protective muscle guarding that decentrates the humeral head, creating secondary impingement. Negative resisted infraspinatus with positive compression tests is the key pattern.",
     "The GNE reveals multi-level involvement that single-structure diagnoses miss. Assess from bigger neuro to smaller neuro.",
     "When neurology is sensitized upstream at the IVF, the entire peripheral nerve tract becomes more mechanically sensitive and prone to irritation at interface points between the nerve and other tissues. Prior diagnoses along the same neural tract (e.g., CTS) may be related.",
     "The CAP validates clinical reasoning with objective within-session changes at each neurological level",

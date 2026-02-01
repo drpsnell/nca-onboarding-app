@@ -18,15 +18,6 @@ type Module = {
   contentPath: string | null;
   videoUrl: string | null;
   duration: number | null;
-  readings?: Reading[];
-};
-
-type Reading = {
-  id: string;
-  title: string;
-  author: string | null;
-  type: string;
-  required: boolean;
 };
 
 export default function Home() {
@@ -91,7 +82,7 @@ function LearnTab({ initialCategory }: { initialCategory?: string | null }) {
   const [selectedModule, setSelectedModule] = useState<Module | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const validCategories = ["DTM", "FYOB", "FOUNDATIONS"];
+  const validCategories = ["DTM", "FYOB"];
   const [activeCategory, setActiveCategory] = useState<string>(
     initialCategory && validCategories.includes(initialCategory) ? initialCategory : "DTM"
   );
@@ -109,11 +100,9 @@ function LearnTab({ initialCategory }: { initialCategory?: string | null }) {
   const categories = [
     { key: "DTM", label: "Dermal Traction Method", color: "bg-blue-500" },
     { key: "FYOB", label: "FYOB Strength", color: "bg-green-500" },
-    { key: "FOUNDATIONS", label: "Foundations", color: "bg-purple-500" },
   ];
 
   const filteredModules = modules.filter((m) => m.category === activeCategory);
-  const foundationsModule = modules.find((m) => m.slug === "foundations");
 
   if (loading) {
     return <div className="text-center py-8 text-black/60 dark:text-white/60">Loading curriculum...</div>;
@@ -149,82 +138,46 @@ function LearnTab({ initialCategory }: { initialCategory?: string | null }) {
         ))}
       </div>
 
-      {/* Foundations - show reading list */}
-      {activeCategory === "FOUNDATIONS" && foundationsModule?.readings && (
-        <div className="space-y-3">
-          <p className="text-sm text-black/70 dark:text-white/70">
-            Foundational texts and references for understanding the NeuroCentric Approach.
-          </p>
-          <div className="grid gap-2">
-            {foundationsModule.readings.map((reading) => (
+      {selectedModule ? (
+        <ModuleDetail module={selectedModule} onBack={() => setSelectedModule(null)} />
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {filteredModules
+            .sort((a, b) => a.order - b.order)
+            .map((mod) => (
               <div
-                key={reading.id}
-                className="rounded-xl border border-black/10 dark:border-white/15 p-4 bg-white dark:bg-[#0f0f0f] flex items-center justify-between"
+                key={mod.id}
+                onClick={() => setSelectedModule(mod)}
+                className="rounded-xl border border-black/10 dark:border-white/15 p-4 bg-white dark:bg-[#0f0f0f] cursor-pointer hover:border-black/20 dark:hover:border-white/30 transition-colors"
               >
-                <div>
-                  <div className="font-medium flex items-center gap-2">
-                    {reading.title}
-                    {reading.required && (
-                      <span className="text-xs px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300">
-                        Required
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <div className="font-medium">{mod.title}</div>
+                    <div className="text-sm text-black/70 dark:text-white/60 mt-1">
+                      {mod.description}
+                    </div>
+                  </div>
+                  <div className="text-right text-sm shrink-0">
+                    {mod.videoUrl && (
+                      <span className="inline-flex items-center gap-1 text-green-600 dark:text-green-400">
+                        <VideoIcon /> Video
+                      </span>
+                    )}
+                    {mod.contentPath && !mod.videoUrl && (
+                      <span className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400">
+                        <DocIcon /> Reading
                       </span>
                     )}
                   </div>
-                  <div className="text-sm text-black/60 dark:text-white/60">
-                    {reading.author} · {reading.type}
-                  </div>
                 </div>
+                {mod.duration && (
+                  <div className="mt-2 text-xs text-black/50 dark:text-white/50">
+                    ~{mod.duration} min
+                  </div>
+                )}
               </div>
             ))}
-          </div>
         </div>
-      )}
-
-      {/* DTM and FYOB modules */}
-      {activeCategory !== "FOUNDATIONS" && (
-        <>
-          {selectedModule ? (
-            <ModuleDetail module={selectedModule} onBack={() => setSelectedModule(null)} />
-          ) : (
-            <div className="grid gap-3 sm:grid-cols-2">
-              {filteredModules
-                .sort((a, b) => a.order - b.order)
-                .map((mod) => (
-                  <div
-                    key={mod.id}
-                    onClick={() => setSelectedModule(mod)}
-                    className="rounded-xl border border-black/10 dark:border-white/15 p-4 bg-white dark:bg-[#0f0f0f] cursor-pointer hover:border-black/20 dark:hover:border-white/30 transition-colors"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <div className="font-medium">{mod.title}</div>
-                        <div className="text-sm text-black/70 dark:text-white/60 mt-1">
-                          {mod.description}
-                        </div>
-                      </div>
-                      <div className="text-right text-sm shrink-0">
-                        {mod.videoUrl && (
-                          <span className="inline-flex items-center gap-1 text-green-600 dark:text-green-400">
-                            <VideoIcon /> Video
-                          </span>
-                        )}
-                        {mod.contentPath && !mod.videoUrl && (
-                          <span className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400">
-                            <DocIcon /> Reading
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    {mod.duration && (
-                      <div className="mt-2 text-xs text-black/50 dark:text-white/50">
-                        ~{mod.duration} min
-                      </div>
-                    )}
-                  </div>
-                ))}
-            </div>
-          )}
-        </>
       )}
     </div>
   );

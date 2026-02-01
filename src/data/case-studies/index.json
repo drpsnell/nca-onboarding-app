@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-26",
+  "lastUpdated": "2026-02-01",
   "status": "draft_for_curation",
   "description": "NCA clinical case study vignettes for Socratic teaching in the NCA Onboarding App",
 
@@ -17,15 +17,15 @@
       "keyConcepts": ["McKenzie", "directional_preference", "centralization", "GNE", "CAP", "patient_agency", "hip_hinge", "ADL_modification"]
     },
     {
-      "id": "draft-002",
-      "file": "draft-case-002.json",
+      "id": "case-002",
+      "file": "case-002.json",
       "title": "The Remote Worker",
-      "status": "draft",
+      "status": "approved",
       "region": "upper_quarter",
       "difficulty": "intermediate",
       "primaryCondition": "Cervical radiculitis with brachial plexopathy",
       "synopsis": "Right shoulder and arm pain for 4 months, worsening over past 6 weeks.",
-      "keyConcepts": ["ULNTT", "cervical_distraction", "DTM", "failed_prior_treatment", "double_crush"]
+      "keyConcepts": ["Wainner_cluster", "SAPS_cluster", "ULNTT", "cervical_distraction", "DTM", "failed_prior_treatment", "multi_level_nerve_sensitivity", "CAP", "ergonomics"]
     },
     {
       "id": "draft-003",
