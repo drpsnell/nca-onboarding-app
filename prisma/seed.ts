@@ -19,7 +19,7 @@ async function main() {
   // Case studies matching src/data/case-studies/*.json
   const caseStudies = [
     {
-      id: "draft-001",
+      id: "case-001",
       title: "The Weekend Warrior",
       synopsis: "Right-sided low back pain radiating to the posterior thigh, present for 3 weeks.",
       creditHours: 1.0,

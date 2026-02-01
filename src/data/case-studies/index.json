@@ -6,8 +6,8 @@
 
   "cases": [
     {
-      "id": "draft-001",
-      "file": "draft-case-001.json",
+      "id": "case-001",
+      "file": "case-001.json",
       "title": "The Weekend Warrior",
       "status": "approved",
       "region": "lower_quarter",
